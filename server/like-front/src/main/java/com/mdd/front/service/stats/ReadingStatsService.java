@@ -2,9 +2,9 @@ package com.mdd.front.service.stats;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mdd.common.entity.books.ReadingRecord;
-import com.mdd.common.entity.bookshelf.Bookshelf;
+import com.mdd.common.entity.books.Bookshelf;
 import com.mdd.common.mapper.books.ReadingRecordMapper;
-import com.mdd.common.mapper.bookshelf.BookshelfMapper;
+import com.mdd.common.mapper.books.BookshelfMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

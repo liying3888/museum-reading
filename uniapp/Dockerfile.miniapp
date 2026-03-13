@@ -6,8 +6,8 @@ WORKDIR /app
 # 复制package文件
 COPY package*.json ./
 
-# 安装依赖（忽略可选依赖和平台特定的包）
-RUN npm install --legacy-peer-deps --ignore-scripts --no-optional --registry=https://registry.npmmirror.com
+# 安装依赖（使用 --force 忽略平台检查）
+RUN npm install --legacy-peer-deps --force --registry=https://registry.npmmirror.com
 
 # 复制源代码
 COPY . .

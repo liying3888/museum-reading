@@ -10,7 +10,7 @@ import com.mdd.common.entity.books.Bookshelf;
 import com.mdd.common.mapper.books.BookMapper;
 import com.mdd.common.mapper.books.BookshelfMapper;
 import com.mdd.front.service.bookshelf.IBookshelfService;
-import com.mdd.front.vo.bookshelf.BookshelfVO;
+import com.mdd.front.vo.bookshelf.BookshelfVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
@@ -51,11 +51,11 @@ public class BookshelfController {
         IPage<Bookshelf> page = bookshelfMapper.selectPage(new Page<>(pageNo, pageSize), wrapper);
         
         // 转换为VO，包含书籍信息
-        List<BookshelfVO> voList = new ArrayList<>();
+        List<BookshelfVo> voList = new ArrayList<>();
         for (Bookshelf bookshelf : page.getRecords()) {
             Book book = bookMapper.selectById(bookshelf.getBookId());
             if (book != null) {
-                BookshelfVO vo = new BookshelfVO();
+                BookshelfVo vo = new BookshelfVo();
                 BeanUtils.copyProperties(bookshelf, vo);
                 vo.setBookId(book.getId());
                 vo.setTitle(book.getTitle());
