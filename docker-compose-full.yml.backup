@@ -1,3 +1,4 @@
+
 services:
   # MySQL 数据库
   mysql:
@@ -39,7 +40,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # 后端服务 - Admin（Java Spring Boot）
+  # 后端服务（Java Spring Boot）
   backend:
     build:
       context: ./server
@@ -70,38 +71,6 @@ services:
       retries: 3
       start_period: 60s
 
-  # 前端服务 - Front（Java Spring Boot）
-  frontend:
-    build:
-      context: ./server
-      dockerfile: Dockerfile.front
-    container_name: museum-frontend
-    restart: always
-    ports:
-      - "8085:8085"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
-      - SERVER_PORT=8085
-      - MYSQL_HOST=mysql
-      - REDIS_HOST=redis
-      - TZ=Asia/Shanghai
-    depends_on:
-      mysql:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-    volumes:
-      - ./server/logs:/app/logs
-      - upload_data:/app/uploads
-    networks:
-      - museum-network
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8085/actuator/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 60s
-
   # 小程序前端（Nginx）
   miniapp:
     build:
@@ -119,7 +88,6 @@ services:
       - museum-network
     depends_on:
       - backend
-      - frontend
 
   # 管理后台（Nginx）
   admin:
@@ -138,7 +106,6 @@ services:
       - museum-network
     depends_on:
       - backend
-      - frontend
 
   # 自动测试服务
   tester:
@@ -148,7 +115,6 @@ services:
     container_name: museum-tester
     environment:
       - API_BASE_URL=http://backend:8082
-      - FRONT_API_BASE_URL=http://frontend:8085
       - TEST_MODE=auto
     volumes:
       - ./tests/reports:/app/reports
@@ -156,8 +122,6 @@ services:
       - museum-network
     depends_on:
       backend:
-        condition: service_healthy
-      frontend:
         condition: service_healthy
 
 networks:

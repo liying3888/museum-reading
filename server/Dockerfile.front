@@ -1,0 +1,39 @@
+FROM maven:3.8.6-openjdk-8-slim AS builder
+
+WORKDIR /build
+
+# 复制Maven配置文件（使用阿里云镜像）
+COPY .mvn/settings.xml /root/.m2/settings.xml
+
+# 复制所有pom文件
+COPY pom.xml .
+COPY like-admin/pom.xml like-admin/
+COPY like-front/pom.xml like-front/
+COPY like-common/pom.xml like-common/
+COPY like-generator/pom.xml like-generator/
+
+# 复制源代码
+COPY . .
+
+# 直接编译打包（使用阿里云镜像加速，跳过dependency:go-offline）
+RUN mvn clean package -DskipTests -Dmaven.test.skip=true -s /root/.m2/settings.xml -T 1C
+
+FROM eclipse-temurin:8-jre
+
+LABEL maintainer="Museum Reading Team"
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
+
+COPY --from=builder /build/like-front/target/like-front-*.jar app.jar
+
+RUN mkdir -p /app/logs /app/uploads
+
+EXPOSE 8085
+
+ENV JAVA_OPTS="-Xms512m -Xmx1024m -XX:+UseG1GC -XX:MaxGCPauseMillis=200"
+
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 --start-period=60s CMD curl -f http://localhost:8085/actuator/health || exit 1
+
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app/app.jar"]
