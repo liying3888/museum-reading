@@ -7,21 +7,40 @@
         <text class="nickname">{{ userInfo.nickname || '读者' }}</text>
         <text class="id">ID: {{ userInfo.sn }}</text>
       </view>
+      <view class="stats-link" @click="goTo('/pages/stats/index')">
+        <text>查看统计</text>
+        <text class="arrow">></text>
+      </view>
     </view>
     
     <!-- 阅读统计 -->
     <view class="stats-card">
-      <view class="stat-item">
-        <text class="stat-value">{{ formatTime(stats.total) }}</text>
-        <text class="stat-label">累计阅读</text>
+      <view class="stat-item" @click="goTo('/pages/stats/index')">
+        <text class="stat-value">{{ formatHours(totalStats.duration_hours) }}</text>
+        <text class="stat-label">累计阅读(小时)</text>
       </view>
-      <view class="stat-item">
-        <text class="stat-value">{{ stats.booksRead }}</text>
+      <view class="stat-item" @click="goTo('/pages/bookshelf/index')">
+        <text class="stat-value">{{ totalStats.finished_books || 0 }}</text>
         <text class="stat-label">已读书籍</text>
       </view>
       <view class="stat-item">
-        <text class="stat-value">{{ stats.continuousDays }}</text>
-        <text class="stat-label">连续打卡</text>
+        <text class="stat-value">{{ totalStats.consecutive_days || 0 }}</text>
+        <text class="stat-label">连续打卡(天)</text>
+      </view>
+    </view>
+    
+    <!-- 今日目标 -->
+    <view class="goal-card">
+      <view class="goal-header">
+        <text class="goal-title">今日目标</text>
+        <text class="goal-tip">{{ goalText }}</text>
+      </view>
+      <view class="goal-progress">
+        <text class="current">已读 {{ todayStats.duration_minutes || 0 }} 分钟</text>
+        <text class="target">目标 {{ goalMinutes }} 分钟</text>
+      </view>
+      <view class="progress-bar">
+        <view class="progress-fill" :style="{ width: goalPercent + '%' }"></view>
       </view>
     </view>
     
@@ -30,6 +49,14 @@
       <view class="menu-item" @click="goTo('/pages/bookshelf/index')">
         <text class="menu-icon">📚</text>
         <text class="menu-title">我的书架</text>
+        <text class="menu-desc">{{ totalStats.total_books || 0 }}本书</text>
+        <text class="menu-arrow">></text>
+      </view>
+      
+      <view class="menu-item" @click="goTo('/pages/stats/index')">
+        <text class="menu-icon">📊</text>
+        <text class="menu-title">阅读统计</text>
+        <text class="menu-desc">查看详情</text>
         <text class="menu-arrow">></text>
       </view>
       
@@ -46,7 +73,7 @@
       </view>
       
       <view class="menu-item" @click="goTo('/pages/reading/records')">
-        <text class="menu-icon">📊</text>
+        <text class="menu-icon">⏱️</text>
         <text class="menu-title">阅读记录</text>
         <text class="menu-arrow">></text>
       </view>
@@ -57,66 +84,75 @@
         <text class="menu-arrow">></text>
       </view>
     </view>
-    
-    <!-- 今日目标 -->
-    <view class="goal-card">
-      <text class="goal-title">今日目标</text>
-      <view class="goal-progress">
-        <text class="current">已读 {{ todayMinutes }} 分钟</text>
-        <text class="target">目标 {{ goalMinutes }} 分钟</text>
-      </view>
-      <view class="progress-bar">
-        <view class="progress-fill" :style="{ width: goalPercent + '%' }"></view>
-      </view>
-    </view>
   </view>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import { readingStats } from '@/api/book'
+import { ref, computed, onMounted } from 'vue'
+import { getTotalStats, getTodayStats } from '@/api/stats'
 
-const userInfo = ref<any>({})
-const stats = ref<any>({
-  total: 0,
-  booksRead: 0,
-  continuousDays: 0
+const userInfo = ref<any>({
+  avatar: '',
+  nickname: '书友',
+  sn: '100001'
 })
 
-const todayMinutes = ref(0)
-const goalMinutes = ref(30)
+const todayStats = ref<any>({})
+const totalStats = ref<any>({})
 
+// 目标设置（可以从配置中读取）
+const goalMinutes = ref(60)
+
+// 目标完成百分比
 const goalPercent = computed(() => {
-  return Math.min(100, (todayMinutes.value / goalMinutes.value) * 100)
+  const minutes = todayStats.value.duration_minutes || 0
+  return Math.min((minutes / goalMinutes.value) * 100, 100)
 })
 
-const formatTime = (seconds: number) => {
-  const hours = Math.floor(seconds / 3600)
-  if (hours > 0) {
-    return `${hours}小时`
+// 目标提示文本
+const goalText = computed(() => {
+  const minutes = todayStats.value.duration_minutes || 0
+  if (minutes >= goalMinutes.value) {
+    return '🎉 已完成目标'
+  } else if (minutes > 0) {
+    return '继续加油'
+  } else {
+    return '开始阅读吧'
   }
-  const minutes = Math.floor(seconds / 60)
-  return `${minutes}分钟`
+})
+
+// 格式化小时数
+const formatHours = (hours: number) => {
+  if (!hours) return '0'
+  return hours.toFixed(1)
 }
 
+// 加载统计数据
 const loadStats = async () => {
   try {
-    const res = await readingStats()
-    if (res.data) {
-      stats.value.total = res.data.total
-      todayMinutes.value = Math.round(res.data.today / 60)
-      goalMinutes.value = res.data.goal || 30
+    const [totalRes, todayRes] = await Promise.all([
+      getTotalStats(),
+      getTodayStats()
+    ])
+    
+    if (totalRes.code === 200) {
+      totalStats.value = totalRes.data
+    }
+    
+    if (todayRes.code === 200) {
+      todayStats.value = todayRes.data
     }
   } catch (e) {
-    console.error(e)
+    console.error('加载统计失败', e)
   }
 }
 
+// 跳转页面
 const goTo = (url: string) => {
   uni.navigateTo({ url })
 }
 
-onShow(() => {
+onMounted(() => {
   loadStats()
 })
 </script>
@@ -125,29 +161,32 @@ onShow(() => {
 .container {
   min-height: 100vh;
   background: #f5f5f5;
+  padding-bottom: 40rpx;
 }
 
 .user-card {
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #667eea, #764ba2);
-  padding: 60rpx 30rpx;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60rpx 40rpx;
+  padding-top: 100rpx;
   
   .avatar {
     width: 120rpx;
     height: 120rpx;
-    border-radius: 60rpx;
-    background: white;
+    border-radius: 50%;
+    border: 4rpx solid #fff;
+    margin-right: 30rpx;
   }
   
   .user-info {
-    margin-left: 30rpx;
+    flex: 1;
     
     .nickname {
-      font-size: 36rpx;
-      color: white;
-      font-weight: bold;
       display: block;
+      font-size: 36rpx;
+      font-weight: bold;
+      color: #fff;
       margin-bottom: 10rpx;
     }
     
@@ -156,47 +195,122 @@ onShow(() => {
       color: rgba(255, 255, 255, 0.8);
     }
   }
+  
+  .stats-link {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 16rpx 24rpx;
+    border-radius: 30rpx;
+    
+    text {
+      font-size: 26rpx;
+      color: #fff;
+    }
+    
+    .arrow {
+      margin-left: 10rpx;
+    }
+  }
 }
 
 .stats-card {
   display: flex;
-  background: white;
-  padding: 40rpx 0;
-  margin: -30rpx 20rpx 20rpx;
+  background: #fff;
+  margin: -40rpx 30rpx 30rpx;
   border-radius: 20rpx;
-  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.1);
+  padding: 40rpx 20rpx;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.1);
   
   .stat-item {
     flex: 1;
     text-align: center;
     
     .stat-value {
-      font-size: 40rpx;
-      font-weight: bold;
-      color: #333;
       display: block;
+      font-size: 48rpx;
+      font-weight: bold;
+      color: #667eea;
       margin-bottom: 10rpx;
     }
     
     .stat-label {
-      font-size: 26rpx;
+      font-size: 24rpx;
       color: #999;
     }
   }
 }
 
+.goal-card {
+  background: #fff;
+  margin: 0 30rpx 30rpx;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.1);
+  
+  .goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rpx;
+    
+    .goal-title {
+      font-size: 32rpx;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .goal-tip {
+      font-size: 24rpx;
+      color: #667eea;
+    }
+  }
+  
+  .goal-progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+    
+    .current, .target {
+      font-size: 24rpx;
+      color: #666;
+    }
+  }
+  
+  .progress-bar {
+    height: 12rpx;
+    background: #f0f0f0;
+    border-radius: 6rpx;
+    overflow: hidden;
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      border-radius: 6rpx;
+      transition: width 0.3s ease;
+    }
+  }
+}
+
 .menu-list {
-  background: white;
-  margin-bottom: 20rpx;
+  background: #fff;
+  margin: 0 30rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.1);
   
   .menu-item {
     display: flex;
     align-items: center;
     padding: 30rpx;
-    border-bottom: 1rpx solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
     
     &:last-child {
       border-bottom: none;
+    }
+    
+    &:active {
+      background: #f9f9f9;
     }
     
     .menu-icon {
@@ -206,55 +320,19 @@ onShow(() => {
     
     .menu-title {
       flex: 1;
-      font-size: 32rpx;
+      font-size: 30rpx;
       color: #333;
+    }
+    
+    .menu-desc {
+      font-size: 24rpx;
+      color: #999;
+      margin-right: 10rpx;
     }
     
     .menu-arrow {
       font-size: 28rpx;
       color: #ccc;
-    }
-  }
-}
-
-.goal-card {
-  background: white;
-  margin: 20rpx;
-  padding: 30rpx;
-  border-radius: 20rpx;
-  
-  .goal-title {
-    font-size: 32rpx;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 20rpx;
-  }
-  
-  .goal-progress {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15rpx;
-    
-    .current {
-      font-size: 28rpx;
-      color: #666;
-    }
-    
-    .target {
-      font-size: 28rpx;
-      color: #999;
-    }
-  }
-  
-  .progress-bar {
-    height: 16rpx;
-    background: #eee;
-    border-radius: 8rpx;
-    overflow: hidden;
-    
-    .progress-fill {
-      height: 100%;
-      background: linear-gradient(to right, #667eea, #764ba2);
     }
   }
 }

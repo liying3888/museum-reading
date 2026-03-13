@@ -116,6 +116,42 @@
 		        "navigationBarTitleText": "支付结果"
 		    },
 		    "auth": true
+        },
+        {
+            "path": "pages/book/detail",
+            "style": {
+                "navigationBarTitleText": "书籍详情"
+            }
+        },
+        {
+            "path": "pages/bookshelf/index",
+            "style": {
+                "navigationBarTitleText": "我的书架"
+            },
+            "auth": true
+        },
+        {
+            "path": "pages/reading/timer",
+            "style": {
+                "navigationBarTitleText": "阅读计时"
+            },
+            "auth": true
+        },
+        {
+            "path": "pages/user/center",
+            "style": {
+                "navigationBarTitleText": "个人中心",
+                "navigationStyle": "custom"
+            },
+            "auth": true
+        },
+        {
+            "path": "pages/stats/index",
+            "style": {
+                "navigationBarTitleText": "阅读统计",
+                "navigationStyle": "custom"
+            },
+            "auth": true
 		},
         {
             "path": "uni_modules/vk-uview-ui/components/u-avatar-cropper/u-avatar-cropper",
