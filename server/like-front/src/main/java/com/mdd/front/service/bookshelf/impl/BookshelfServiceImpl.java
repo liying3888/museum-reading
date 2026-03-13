@@ -15,17 +15,17 @@ public class BookshelfServiceImpl implements IBookshelfService {
     private BookshelfMapper bookshelfMapper;
     
     @Override
-    public List<Bookshelf> list(Long userId, String status) {
+    public List<Bookshelf> list(Integer userId, Integer status) {
         LambdaQueryWrapper<Bookshelf> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(Bookshelf::getUserId, userId);
-        if (status != null && !status.isEmpty()) {
+        if (status != null) {
             wrapper.eq(Bookshelf::getStatus, status);
         }
         return bookshelfMapper.selectList(wrapper);
     }
     
     @Override
-    public void add(Long userId, Long bookId, String status) {
+    public void add(Integer userId, Integer bookId, Integer status) {
         Bookshelf bookshelf = new Bookshelf();
         bookshelf.setUserId(userId);
         bookshelf.setBookId(bookId);
@@ -34,7 +34,7 @@ public class BookshelfServiceImpl implements IBookshelfService {
     }
     
     @Override
-    public void remove(Long userId, Long bookId) {
+    public void remove(Integer userId, Integer bookId) {
         LambdaQueryWrapper<Bookshelf> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(Bookshelf::getUserId, userId);
         wrapper.eq(Bookshelf::getBookId, bookId);
@@ -42,7 +42,7 @@ public class BookshelfServiceImpl implements IBookshelfService {
     }
     
     @Override
-    public void updateStatus(Long userId, Long bookId, String status) {
+    public void updateStatus(Integer userId, Integer bookId, Integer status) {
         LambdaQueryWrapper<Bookshelf> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(Bookshelf::getUserId, userId);
         wrapper.eq(Bookshelf::getBookId, bookId);

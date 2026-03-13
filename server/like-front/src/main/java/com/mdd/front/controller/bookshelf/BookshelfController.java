@@ -58,9 +58,9 @@ public class BookshelfController {
                 BookshelfVo vo = new BookshelfVo();
                 BeanUtils.copyProperties(bookshelf, vo);
                 vo.setBookId(book.getId());
-                vo.setTitle(book.getTitle());
-                vo.setAuthor(book.getAuthor());
-                vo.setCover(book.getCover());
+                vo.setBookTitle(book.getTitle());
+                vo.setBookAuthor(book.getAuthor());
+                vo.setBookCover(book.getCover());
                 vo.setPages(book.getPages());
                 voList.add(vo);
             }

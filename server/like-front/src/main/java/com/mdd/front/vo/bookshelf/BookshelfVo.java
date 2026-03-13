@@ -4,10 +4,11 @@ import lombok.Data;
 
 @Data
 public class BookshelfVo {
-    private Long id;
-    private Long bookId;
+    private Integer id;
+    private Integer bookId;
     private String bookTitle;
     private String bookAuthor;
     private String bookCover;
+    private Integer pages;
     private String status;
 }
