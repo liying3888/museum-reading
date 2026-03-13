@@ -1,0 +1,23 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "荣河读书",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/reading/timer",
+      "style": {
+        "navigationBarTitleText": "阅读计时"
+      }
+    },
+    {
+      "path": "pages/bookshelf/index",
+      "style": {
+        "navigationBarTitleText": "我的书架"
+      }
+    }
+  ]
+}
