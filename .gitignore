@@ -14,4 +14,4 @@ application-test.yml
 # 协作任务卡属内部过程件（含岗岗协调细节），public 外包仓不暴露内部协作结构（leader 2026-11-02 决策）
 task-cards/
 /public/uploads/*
-!/public/uploads/index.html
+!/public/uploads/index.html.DS_Store
