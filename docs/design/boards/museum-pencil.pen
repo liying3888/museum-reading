@@ -3324,6 +3324,4780 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "bXfgF",
+      "x": 0,
+      "y": 2400,
+      "name": "02 书库",
+      "clip": true,
+      "width": 390,
+      "height": 1480,
+      "fill": "#F8F5EF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "xtcjM",
+          "width": "fill_container",
+          "height": 24,
+          "fill": "#F8F5EF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "xX81V",
+              "fill": "#2C2A26",
+              "content": "20:26",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "U3mVm0",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            12,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "V9lDzV",
+              "fill": "#2C2A26",
+              "content": "书库",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "gEEpX",
+              "width": "fill_container",
+              "height": 36,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                0,
+                0,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "S2G6B",
+                  "fill": "#A8A296",
+                  "content": "搜书名 / 作者",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BEqF6",
+          "width": "fill_container",
+          "gap": 8,
+          "padding": [
+            8,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "YtpVY",
+              "width": 56,
+              "height": 28,
+              "fill": "#2F4154",
+              "cornerRadius": 14,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "c5GnjQ",
+                  "fill": "#FFFFFF",
+                  "content": "全部",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jvFHD",
+              "width": 52,
+              "height": 28,
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "x0qxwi",
+                  "fill": "#2C2A26",
+                  "content": "文学",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GzBN5",
+              "width": 52,
+              "height": 28,
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VOXWz",
+                  "fill": "#2C2A26",
+                  "content": "历史",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gD6iw",
+              "width": 52,
+              "height": 28,
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gjpI7",
+                  "fill": "#2C2A26",
+                  "content": "科学",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Yk5CZ",
+              "width": 52,
+              "height": 28,
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HazmM",
+                  "fill": "#2C2A26",
+                  "content": "艺术",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "J9VoJ",
+              "width": 52,
+              "height": 28,
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VEa6i",
+                  "fill": "#2C2A26",
+                  "content": "哲学",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WM9M3",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            16,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "UxvAR",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "gap": 14,
+              "padding": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "utH5j",
+                  "width": 80,
+                  "height": 110,
+                  "fill": "#2F4154",
+                  "cornerRadius": 4,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iu1RK",
+                      "fill": "#FFFFFF",
+                      "content": "百年",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "OyuQx",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FMfei",
+                      "fill": "#2C2A26",
+                      "content": "百年孤独",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IkIRe",
+                      "fill": "#6B675E",
+                      "content": "加西亚·马尔克斯",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Nuxt8",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "xn6lZ",
+                          "width": 40,
+                          "height": 20,
+                          "fill": "#F5E3DE",
+                          "cornerRadius": 4,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BoAy8",
+                              "fill": "#B03A2E",
+                              "content": "文学",
+                              "fontFamily": "Noto Sans SC",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "Nknis",
+                          "fill": "#A8A296",
+                          "content": "360 页",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q4BV5",
+                      "width": "fill_container",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "S0ADV4",
+                          "width": 10,
+                          "height": 10,
+                          "fill": "#B8935A",
+                          "cornerRadius": 5
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZelWe",
+                          "fill": "#B8935A",
+                          "content": "4.8",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "MsfKJ",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "gap": 14,
+              "padding": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WoHvX",
+                  "width": 80,
+                  "height": 110,
+                  "fill": "#2F4154",
+                  "cornerRadius": 4,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eIomj",
+                      "fill": "#FFFFFF",
+                      "content": "三体",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "E8GQO",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fLqfR",
+                      "fill": "#2C2A26",
+                      "content": "三体",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VgiBi",
+                      "fill": "#6B675E",
+                      "content": "刘慈欣",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qaoXH",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "c4L8q",
+                          "width": 40,
+                          "height": 20,
+                          "fill": "#F5E3DE",
+                          "cornerRadius": 4,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "h4LuWu",
+                              "fill": "#B03A2E",
+                              "content": "科学",
+                              "fontFamily": "Noto Sans SC",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "j2HzUC",
+                          "fill": "#A8A296",
+                          "content": "302 页",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Tlnd5",
+                      "width": "fill_container",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "AvPcd",
+                          "width": 10,
+                          "height": 10,
+                          "fill": "#B8935A",
+                          "cornerRadius": 5
+                        },
+                        {
+                          "type": "text",
+                          "id": "Lq0zC",
+                          "fill": "#B8935A",
+                          "content": "4.9",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "x6Hgn",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "gap": 14,
+              "padding": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bUfEe",
+                  "width": 80,
+                  "height": 110,
+                  "fill": "#2F4154",
+                  "cornerRadius": 4,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "B5UcZv",
+                      "fill": "#FFFFFF",
+                      "content": "明朝",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fKPt0",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fr6fT",
+                      "fill": "#2C2A26",
+                      "content": "明朝那些事儿",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y29AP",
+                      "fill": "#6B675E",
+                      "content": "当年明月",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "o4KVW",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "q3eqlh",
+                          "width": 40,
+                          "height": 20,
+                          "fill": "#F5E3DE",
+                          "cornerRadius": 4,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "I9tud",
+                              "fill": "#B03A2E",
+                              "content": "历史",
+                              "fontFamily": "Noto Sans SC",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "p5TZr",
+                          "fill": "#A8A296",
+                          "content": "528 页",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CYWBT",
+                      "width": "fill_container",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Fgy8P",
+                          "width": 10,
+                          "height": 10,
+                          "fill": "#B8935A",
+                          "cornerRadius": 5
+                        },
+                        {
+                          "type": "text",
+                          "id": "k89Djs",
+                          "fill": "#B8935A",
+                          "content": "4.6",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "dyTo7",
+              "fill": "#A8A296",
+              "content": "没有更多了",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PzKkE",
+          "width": "fill_container",
+          "height": 56,
+          "fill": "#FFFFFF",
+          "stroke": "#E8E2D6",
+          "strokeWidth": 1,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "h1SSe",
+              "width": "fill_container",
+              "height": 56,
+              "layout": "vertical",
+              "gap": 4,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "p5Sigi",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#A8A296",
+                  "cornerRadius": 5
+                },
+                {
+                  "type": "text",
+                  "id": "mHvfp",
+                  "fill": "#6B675E",
+                  "content": "首页",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yL0XO",
+              "width": "fill_container",
+              "height": 56,
+              "layout": "vertical",
+              "gap": 4,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "T5fI1",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#2F4154",
+                  "cornerRadius": 3
+                },
+                {
+                  "type": "text",
+                  "id": "c5EX6J",
+                  "fill": "#2F4154",
+                  "content": "书库",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p7CMer",
+              "width": "fill_container",
+              "height": 56,
+              "layout": "vertical",
+              "gap": 4,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "L7Lpb1",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#A8A296",
+                  "cornerRadius": 5
+                },
+                {
+                  "type": "text",
+                  "id": "j6jBTD",
+                  "fill": "#6B675E",
+                  "content": "书架",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "occY0",
+              "width": "fill_container",
+              "height": 56,
+              "layout": "vertical",
+              "gap": 4,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l1kJM",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#A8A296",
+                  "cornerRadius": 5
+                },
+                {
+                  "type": "text",
+                  "id": "PDkm9",
+                  "fill": "#6B675E",
+                  "content": "我的",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hyxty",
+      "x": 0,
+      "y": 3960,
+      "name": "03 书籍详情",
+      "clip": true,
+      "width": 390,
+      "height": 1334,
+      "fill": "#F8F5EF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "xBoze",
+          "width": "fill_container",
+          "height": 24,
+          "fill": "#F8F5EF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "DIvdv",
+              "fill": "#2C2A26",
+              "content": "20:30",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PZQAs",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F8F5EF",
+          "gap": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "duYsr",
+              "fill": "#2C2A26",
+              "content": "‹",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 22,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "e5OHJ",
+              "fill": "#2C2A26",
+              "content": "书籍详情",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 17,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZQuQ8",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            4,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "JTEMl",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "gap": 16,
+              "padding": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "unvpH",
+                  "width": 100,
+                  "height": 140,
+                  "fill": "#2F4154",
+                  "cornerRadius": 4,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jSmWY",
+                      "fill": "#FFFFFF",
+                      "content": "三体",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "djjUx",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JOawH",
+                      "fill": "#2C2A26",
+                      "content": "三体",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xU4Zo",
+                      "fill": "#6B675E",
+                      "content": "刘慈欣",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O41XMh",
+                      "fill": "#A8A296",
+                      "content": "重庆出版社",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "K7bci",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "LRs84",
+                          "width": 40,
+                          "height": 20,
+                          "fill": "#F5E3DE",
+                          "cornerRadius": 4,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "x0oCE",
+                              "fill": "#B03A2E",
+                              "content": "科学",
+                              "fontFamily": "Noto Sans SC",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "M7sLs6",
+                          "fill": "#A8A296",
+                          "content": "共 302 页",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pFnLv",
+                      "width": "fill_container",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "S517PE",
+                          "width": 10,
+                          "height": 10,
+                          "fill": "#B8935A",
+                          "cornerRadius": 5
+                        },
+                        {
+                          "type": "text",
+                          "id": "zJMbG",
+                          "fill": "#B8935A",
+                          "content": "4.9 · 12.6 万人评过",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "P0CWgv",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mNLHy",
+                  "fill": "#2C2A26",
+                  "content": "阅读进度 62%",
+                  "fontFamily": "Noto Serif SC",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "ujWAn",
+                  "width": 330,
+                  "height": 8,
+                  "fill": "#F1ECE1",
+                  "cornerRadius": 4
+                },
+                {
+                  "type": "frame",
+                  "id": "y4OQX",
+                  "width": 205,
+                  "height": 8,
+                  "fill": "#B03A2E",
+                  "cornerRadius": 4
+                },
+                {
+                  "type": "text",
+                  "id": "c2CFQ",
+                  "fill": "#6B675E",
+                  "content": "第 187 页 / 共 302 页",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fQxcN",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "A1TVC",
+                  "fill": "#2C2A26",
+                  "content": "内容简介",
+                  "fontFamily": "Noto Serif SC",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "T8hrp",
+                  "fill": "#6B675E",
+                  "textGrowth": "fixed-width",
+                  "width": 330,
+                  "content": "文化大革命之际，军方探寻外星文明的绝秘计划「红岸工程」取得了突破性进展，一位参与者的发射意外让地球文明暴露在宇宙视野之中。",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "coZCp",
+                  "fill": "#2F4154",
+                  "content": "展开",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KvHP4",
+          "width": "fill_container",
+          "height": 60,
+          "fill": "#FFFFFF",
+          "stroke": "#E8E2D6",
+          "strokeWidth": 1,
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "K7nX6",
+              "width": 216,
+              "height": 44,
+              "fill": "#2F4154",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r39YB",
+                  "fill": "#FFFFFF",
+                  "content": "继续阅读",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pqhJt",
+              "width": 126,
+              "height": 44,
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#2F4154",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Iy7IY",
+                  "fill": "#2F4154",
+                  "content": "更新进度",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Q6zatY",
+      "x": 0,
+      "y": 5400,
+      "name": "05 阅读计时",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#1E2B38",
+      "layout": "vertical",
+      "gap": 18,
+      "padding": [
+        90,
+        24
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "YNIP1",
+          "opacity": 0.5,
+          "fill": "#F4EFE6",
+          "content": "20:40",
+          "fontFamily": "Noto Sans SC",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "pIHv7",
+          "opacity": 0.65,
+          "fill": "#F4EFE6",
+          "content": "三体 · 刘慈欣",
+          "fontFamily": "Noto Sans SC",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "cwipN",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "unEvx",
+              "fill": "#F4EFE6",
+              "content": "00:26:41",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 60,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "vnR7K",
+              "opacity": 0.55,
+              "fill": "#F4EFE6",
+              "content": "已读 12 页",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MegWi",
+          "width": "fill_container",
+          "gap": 14,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "J6yJp",
+              "opacity": 0.85,
+              "width": 150,
+              "height": 48,
+              "cornerRadius": 12,
+              "stroke": "#F4EFE6",
+              "strokeWidth": 1.5,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "c8qFQB",
+                  "fill": "#F4EFE6",
+                  "content": "暂停",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xf1dv",
+              "width": 150,
+              "height": 48,
+              "fill": "#F4EFE6",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KzjT6",
+                  "fill": "#1E2B38",
+                  "content": "结束",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "fUzYI",
+          "opacity": 0.45,
+          "fill": "#F4EFE6",
+          "content": "计时后台仍在进行 · 可离开页面",
+          "fontFamily": "Noto Sans SC",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "iBnsy",
+      "x": 0,
+      "y": 6360,
+      "name": "06 我的",
+      "clip": true,
+      "width": 390,
+      "height": 1450,
+      "fill": "#F8F5EF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KseL5",
+          "width": "fill_container",
+          "height": 24,
+          "fill": "#F8F5EF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "i9QflU",
+              "fill": "#2C2A26",
+              "content": "20:44",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MAxlU",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            8,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "LDVCY",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "gap": 14,
+              "padding": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "THsh1",
+                  "width": 56,
+                  "height": 56,
+                  "fill": "#F1ECE1",
+                  "cornerRadius": 28,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r8EtGh",
+                      "fill": "#2C2A26",
+                      "content": "读",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "w69wF",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 5,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ol1ul",
+                      "fill": "#2C2A26",
+                      "content": "河畔读者",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "v9key",
+                      "fill": "#A8A296",
+                      "content": "读者号 20261088",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "endRS",
+                  "fill": "#2F4154",
+                  "content": "编辑资料",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "l9BabT",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cz5j6",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E8E2D6",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "p8S0c",
+                      "fill": "#2C2A26",
+                      "content": "36.5",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TQHeY",
+                      "fill": "#6B675E",
+                      "content": "累计小时",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UICYJ",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E8E2D6",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rCltL",
+                      "fill": "#2C2A26",
+                      "content": "12",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EVX2d",
+                      "fill": "#6B675E",
+                      "content": "已读本书",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Qessv",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E8E2D6",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "R7e3l",
+                      "fill": "#2C2A26",
+                      "content": "7",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "k35HyR",
+                      "fill": "#6B675E",
+                      "content": "连续打卡",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F7STr",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YypOc",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BCrMC",
+                      "fill": "#2C2A26",
+                      "content": "今日目标",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Rtmeh",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ChAzx",
+                      "fill": "#6B675E",
+                      "content": "26 / 30 分钟",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "f68D8q",
+                      "fill": "#2F4154",
+                      "content": "修改",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V2xbQ",
+                  "width": 330,
+                  "height": 6,
+                  "fill": "#F1ECE1",
+                  "cornerRadius": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "RXUgs",
+                  "width": 286,
+                  "height": 6,
+                  "fill": "#B03A2E",
+                  "cornerRadius": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "b5Ecw",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mp4IQ",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "gap": 10,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AJF1Y",
+                      "width": 16,
+                      "height": 16,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "gH3qz",
+                      "fill": "#2C2A26",
+                      "content": "我的书架",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k0oYpW",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L9tT41",
+                      "fill": "#A8A296",
+                      "content": "›",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "O8ao0",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "tIZMw",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "gap": 10,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Gz3Xg",
+                      "width": 16,
+                      "height": 16,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y6CpJ",
+                      "fill": "#2C2A26",
+                      "content": "阅读统计",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NQbiK",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c6S3y0",
+                      "fill": "#A8A296",
+                      "content": "›",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Elmih",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "BdLnV",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "gap": 10,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tvfFu",
+                      "width": 16,
+                      "height": 16,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "ytwI7",
+                      "fill": "#2C2A26",
+                      "content": "关于我们",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bKU1L",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YgWlI",
+                      "fill": "#A8A296",
+                      "content": "›",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "s8tv78",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "L81x7",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "gap": 10,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sHeaX",
+                      "width": 16,
+                      "height": 16,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "k0ivh",
+                      "fill": "#2C2A26",
+                      "content": "联系客服",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "keAS5",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jCa5y",
+                      "fill": "#A8A296",
+                      "content": "›",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Dlby1",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "seAtf",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "gap": 10,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "iDSj5",
+                      "width": 16,
+                      "height": 16,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "Yg6y9",
+                      "fill": "#2C2A26",
+                      "content": "用户协议",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i13pk8",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "e3KYM",
+                      "fill": "#A8A296",
+                      "content": "›",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "USTJ9",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "rCT0z",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "gap": 10,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G9aCll",
+                      "width": 16,
+                      "height": 16,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "k7O8I",
+                      "fill": "#2C2A26",
+                      "content": "隐私政策",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ofi6Q",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "a2B2v8",
+                      "fill": "#A8A296",
+                      "content": "›",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rw6z8",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "Ug6yp",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "gap": 10,
+                  "padding": [
+                    13,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YqpyU",
+                      "width": 16,
+                      "height": 16,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "j0t7j",
+                      "fill": "#2C2A26",
+                      "content": "设置",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v85Y0W",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WajZK",
+                      "fill": "#A8A296",
+                      "content": "›",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nR5EY",
+          "width": "fill_container",
+          "height": 56,
+          "fill": "#FFFFFF",
+          "stroke": "#E8E2D6",
+          "strokeWidth": 1,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Pli8A",
+              "width": "fill_container",
+              "height": 56,
+              "layout": "vertical",
+              "gap": 4,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hqvT9",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#A8A296",
+                  "cornerRadius": 5
+                },
+                {
+                  "type": "text",
+                  "id": "DO6wX",
+                  "fill": "#6B675E",
+                  "content": "首页",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "W4oHJ",
+              "width": "fill_container",
+              "height": 56,
+              "layout": "vertical",
+              "gap": 4,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mbmaW",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#A8A296",
+                  "cornerRadius": 5
+                },
+                {
+                  "type": "text",
+                  "id": "w0cLv",
+                  "fill": "#6B675E",
+                  "content": "书库",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "k1JlP7",
+              "width": "fill_container",
+              "height": 56,
+              "layout": "vertical",
+              "gap": 4,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aLbTy",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#A8A296",
+                  "cornerRadius": 5
+                },
+                {
+                  "type": "text",
+                  "id": "PoClM",
+                  "fill": "#6B675E",
+                  "content": "书架",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nDcxU",
+              "width": "fill_container",
+              "height": 56,
+              "layout": "vertical",
+              "gap": 4,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QHWcP",
+                  "width": 16,
+                  "height": 16,
+                  "fill": "#2F4154",
+                  "cornerRadius": 3
+                },
+                {
+                  "type": "text",
+                  "id": "HElaC",
+                  "fill": "#2F4154",
+                  "content": "我的",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BKSh5",
+      "x": 0,
+      "y": 7920,
+      "name": "08 阅读统计",
+      "clip": true,
+      "width": 390,
+      "height": 1560,
+      "fill": "#F8F5EF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "kNS6y",
+          "width": "fill_container",
+          "height": 24,
+          "fill": "#F8F5EF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "GiBgc",
+              "fill": "#2C2A26",
+              "content": "20:56",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tXW8w",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F8F5EF",
+          "gap": 8,
+          "padding": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "xWzto",
+              "fill": "#2C2A26",
+              "content": "‹",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 22,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Y9LGA5",
+              "fill": "#2C2A26",
+              "content": "阅读统计",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 17,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "af0bt",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            4,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "OFZzh",
+              "name": "三格",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "EWHAt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XZRRJ",
+                      "fill": "#2C2A26",
+                      "content": "26",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UP0oL",
+                      "fill": "#6B675E",
+                      "content": "今日分钟",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FuBJo",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "E6zKd",
+                      "fill": "#2C2A26",
+                      "content": "3.2",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "a7CWi",
+                      "fill": "#6B675E",
+                      "content": "本周小时",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IxhIR",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uTdX0",
+                      "fill": "#2C2A26",
+                      "content": "36.5",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "t8BCwL",
+                      "fill": "#6B675E",
+                      "content": "累计小时",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fXe0C",
+              "name": "本周柱图",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cUfnt",
+                  "fill": "#2C2A26",
+                  "content": "本周阅读",
+                  "fontFamily": "Noto Serif SC",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "Hhj4P",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "drUd3",
+                      "width": 36,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ghAqh",
+                          "fill": "#6B675E",
+                          "content": "44",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Y8N4s",
+                          "width": 14,
+                          "height": 44,
+                          "fill": "#2F4154",
+                          "cornerRadius": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "lmaJO",
+                          "fill": "#A8A296",
+                          "content": "一",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Z98Vv",
+                      "width": 36,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "P2Wmy",
+                          "fill": "#B03A2E",
+                          "content": "60",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VlJMp",
+                          "width": 14,
+                          "height": 60,
+                          "fill": "#B03A2E",
+                          "cornerRadius": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "PqivD",
+                          "fill": "#B03A2E",
+                          "content": "二",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bLYjW",
+                      "width": 36,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zCUfN",
+                          "fill": "#6B675E",
+                          "content": "—",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "R8raP",
+                          "width": 14,
+                          "height": 4,
+                          "fill": "#2F4154",
+                          "cornerRadius": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "z3ODY",
+                          "fill": "#A8A296",
+                          "content": "三",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RJlCr",
+                      "width": 36,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vEIp8",
+                          "fill": "#6B675E",
+                          "content": "28",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zkSC7",
+                          "width": 14,
+                          "height": 28,
+                          "fill": "#2F4154",
+                          "cornerRadius": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "knwr8",
+                          "fill": "#A8A296",
+                          "content": "四",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Vksi4",
+                      "width": 36,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "er8v1",
+                          "fill": "#6B675E",
+                          "content": "50",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ArMmi",
+                          "width": 14,
+                          "height": 50,
+                          "fill": "#2F4154",
+                          "cornerRadius": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "yCDhJ",
+                          "fill": "#A8A296",
+                          "content": "五",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N7dHr",
+                      "width": 36,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yIomJ",
+                          "fill": "#6B675E",
+                          "content": "22",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dAVWH",
+                          "width": 14,
+                          "height": 22,
+                          "fill": "#2F4154",
+                          "cornerRadius": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "fkmh1",
+                          "fill": "#A8A296",
+                          "content": "六",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FfIsR",
+                      "width": 36,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qqC0R",
+                          "fill": "#6B675E",
+                          "content": "36",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "yKpeG",
+                          "width": 14,
+                          "height": 36,
+                          "fill": "#2F4154",
+                          "cornerRadius": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "V73zT3",
+                          "fill": "#A8A296",
+                          "content": "日",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xIK87",
+              "name": "打卡月历",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RW4CF",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "thFSN",
+                      "fill": "#6B675E",
+                      "content": "‹",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "roaZG",
+                      "fill": "#2C2A26",
+                      "content": "2026 年 11 月 · 已读 2 天",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eOjOg",
+                      "fill": "#6B675E",
+                      "content": "›",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uwx00",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vhyb5",
+                      "width": 42,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f6huAN",
+                          "fill": "#A8A296",
+                          "content": "一",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NbT4j",
+                      "width": 42,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RShLa",
+                          "fill": "#A8A296",
+                          "content": "二",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PrW5q",
+                      "width": 42,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LFfLq",
+                          "fill": "#A8A296",
+                          "content": "三",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Hso5f",
+                      "width": 42,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rO0mC",
+                          "fill": "#A8A296",
+                          "content": "四",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dKZ9W",
+                      "width": 42,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YSxg8",
+                          "fill": "#A8A296",
+                          "content": "五",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kjXw4",
+                      "width": 42,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mq1Sk",
+                          "fill": "#A8A296",
+                          "content": "六",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZTK0F",
+                      "width": 42,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "g8s8k",
+                          "fill": "#A8A296",
+                          "content": "日",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 9,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YJAHR",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xwzWc",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#B03A2E",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EEiuY",
+                          "fill": "#FFFFFF",
+                          "content": "1",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "r7Zg3",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#B03A2E",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CQvHI",
+                          "fill": "#FFFFFF",
+                          "content": "2",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BYnq5",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hwkfS",
+                          "fill": "#6B675E",
+                          "content": "3",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X3Ths",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "y6BWo",
+                          "fill": "#A8A296",
+                          "content": "4",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QOh2X",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jiEkN",
+                          "fill": "#A8A296",
+                          "content": "5",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "drtAP",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YhO3j",
+                          "fill": "#A8A296",
+                          "content": "6",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c2NBa",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IT6Bo",
+                          "fill": "#A8A296",
+                          "content": "7",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PFWKB",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "r312J",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Zo5bn",
+                          "fill": "#A8A296",
+                          "content": "8",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UF2lL",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AvJWR",
+                          "fill": "#A8A296",
+                          "content": "9",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XYy0R",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eQ0fV",
+                          "fill": "#A8A296",
+                          "content": "10",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oAULs",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O2s8r",
+                          "fill": "#A8A296",
+                          "content": "11",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "n7Hgrm",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R1vNjL",
+                          "fill": "#A8A296",
+                          "content": "12",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ocx29",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Y2sfsQ",
+                          "fill": "#A8A296",
+                          "content": "13",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rXPcQ",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jl8vh",
+                          "fill": "#A8A296",
+                          "content": "14",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pWQmE",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fKYWm",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YYgrb",
+                          "fill": "#A8A296",
+                          "content": "15",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Vuv2e",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NO5fn",
+                          "fill": "#A8A296",
+                          "content": "16",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "els6k",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HoR3p",
+                          "fill": "#A8A296",
+                          "content": "17",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "q4i7T",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yVxfY",
+                          "fill": "#A8A296",
+                          "content": "18",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yvnsx",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VCE5w",
+                          "fill": "#A8A296",
+                          "content": "19",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AYAGY",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cVDMS",
+                          "fill": "#A8A296",
+                          "content": "20",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J6YVJ",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l2MlR",
+                          "fill": "#A8A296",
+                          "content": "21",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Qyyqb",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "QMCE9",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iZzjr",
+                          "fill": "#A8A296",
+                          "content": "22",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "L3DkT",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A4Y5MR",
+                          "fill": "#A8A296",
+                          "content": "23",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b59oD",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "We0Da",
+                          "fill": "#A8A296",
+                          "content": "24",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "f2tYW2",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VU7np",
+                          "fill": "#A8A296",
+                          "content": "25",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ib81M",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Zkvwo",
+                          "fill": "#A8A296",
+                          "content": "26",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ozgPZ",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Jlica",
+                          "fill": "#A8A296",
+                          "content": "27",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PUkwN",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LCsjV",
+                          "fill": "#A8A296",
+                          "content": "28",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ykLYV",
+                  "width": "fill_container",
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "T6ntFW",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E3LcH",
+                          "fill": "#A8A296",
+                          "content": "29",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V6Hbue",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 5,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "z3ZKW5",
+                          "fill": "#A8A296",
+                          "content": "30",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xmvFE",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T9pcN",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NGMc7",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v8uYm",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Qg8mT",
+                      "width": 42,
+                      "height": 30,
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ILUrv",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "laQZG",
+                      "fill": "#A8A296",
+                      "content": "读完一日钤一印 · 已读日为朱砂印",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AmPeC",
+              "name": "明细",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mmTBo",
+                  "width": "fill_container",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IyIYt",
+                      "fill": "#6B675E",
+                      "content": "阅读天数",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZFMZf",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c6aaL",
+                      "fill": "#2C2A26",
+                      "content": "46 天",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GGSEm",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "eHAYP",
+                  "width": "fill_container",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uTybX",
+                      "fill": "#6B675E",
+                      "content": "在读书籍",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vtsgp",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x4Y4J",
+                      "fill": "#2C2A26",
+                      "content": "2 本",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QxwHY",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "ciEkL",
+                  "width": "fill_container",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S4CmAp",
+                      "fill": "#6B675E",
+                      "content": "读完书籍",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vtFDQ",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "r9Hdm",
+                      "fill": "#2C2A26",
+                      "content": "12 本",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "A2wQao",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E8E2D6"
+                },
+                {
+                  "type": "frame",
+                  "id": "xgVYG",
+                  "width": "fill_container",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QrCcI",
+                      "fill": "#6B675E",
+                      "content": "书架总数",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "j4r2x",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KKX4M",
+                      "fill": "#2C2A26",
+                      "content": "15 本",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "aMFhO",
+      "x": 0,
+      "y": 9600,
+      "name": "01 视觉方向",
+      "clip": true,
+      "width": 390,
+      "height": 1680,
+      "fill": "#F8F5EF",
+      "layout": "vertical",
+      "gap": 36,
+      "padding": [
+        40,
+        24
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "F0Mxwt",
+          "fill": "#2C2A26",
+          "content": "视觉方向",
+          "fontFamily": "Noto Serif SC",
+          "fontSize": 34,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "UHS3W",
+          "fill": "#6B675E",
+          "content": "数字书斋 · 钤印为证",
+          "fontFamily": "Noto Sans SC",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "n0hcV",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "kQ8Uq",
+              "fill": "#2C2A26",
+              "content": "色板 18 token",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "vZqa5",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QnSwf",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GwfBn",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "y1h9uU",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#F8F5EF",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "pZjkb",
+                          "fill": "#2C2A26",
+                          "content": "paper",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kBYqf",
+                          "fill": "#A8A296",
+                          "content": "#F8F5EF",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lCZwJ",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "C2MRV",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#F1ECE1",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "X4937Y",
+                          "fill": "#2C2A26",
+                          "content": "paper-deep",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "t7akF",
+                          "fill": "#A8A296",
+                          "content": "#F1ECE1",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p1piJ",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Ub7F5",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "VBZxz",
+                          "fill": "#2C2A26",
+                          "content": "card",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XdCPR",
+                          "fill": "#A8A296",
+                          "content": "#FFFFFF",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Kj1hR",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "A5wcwN",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Xyutj",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#2C2A26",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "rjhhO",
+                          "fill": "#2C2A26",
+                          "content": "ink",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pFlfE",
+                          "fill": "#A8A296",
+                          "content": "#2C2A26",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ULcI6",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "MlNwt",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#6B675E",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "v2iUf",
+                          "fill": "#2C2A26",
+                          "content": "ink-2",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "H65Te",
+                          "fill": "#A8A296",
+                          "content": "#6B675E",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FspDh",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yhkbb",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#A8A296",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "IpOFb",
+                          "fill": "#2C2A26",
+                          "content": "ink-3",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Fswgb",
+                          "fill": "#A8A296",
+                          "content": "#A8A296",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M5VD4",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YpxwQ",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "SBbIz",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#E8E2D6",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "t4Vv73",
+                          "fill": "#2C2A26",
+                          "content": "line",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JAioN",
+                          "fill": "#A8A296",
+                          "content": "#E8E2D6",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Gudvg",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "FT6cv",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#2F4154",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "fB0tF",
+                          "fill": "#2C2A26",
+                          "content": "indigo",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "y81qvE",
+                          "fill": "#A8A296",
+                          "content": "#2F4154",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jhvRC",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qwRbg",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#243342",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "gZa7k",
+                          "fill": "#2C2A26",
+                          "content": "indigo-deep",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tKG2w",
+                          "fill": "#A8A296",
+                          "content": "#243342",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "stM0V",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qnXvv",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "kZX97",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#B03A2E",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "FKr6i",
+                          "fill": "#2C2A26",
+                          "content": "cinnabar",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kXm0e",
+                          "fill": "#A8A296",
+                          "content": "#B03A2E",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hBocJ",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "TQnVV",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#F5E3DE",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q2UFIq",
+                          "fill": "#2C2A26",
+                          "content": "cinnabar-soft",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HII1F",
+                          "fill": "#A8A296",
+                          "content": "#F5E3DE",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zyv2M",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "wLAh7",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#1E2B38",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "H2VSOK",
+                          "fill": "#2C2A26",
+                          "content": "night",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GCTPv",
+                          "fill": "#A8A296",
+                          "content": "#1E2B38",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d6z7Rn",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "x0tmcQ",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "nboeg",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#F4EFE6",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q2nLt8",
+                          "fill": "#2C2A26",
+                          "content": "night-ink",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "a3U6CD",
+                          "fill": "#A8A296",
+                          "content": "#F4EFE6",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BBRVF",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "e9pGf",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#B8935A",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "RuV3R",
+                          "fill": "#2C2A26",
+                          "content": "gold",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "p7g0M",
+                          "fill": "#A8A296",
+                          "content": "#B8935A",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SGTPq",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "WHtKQ",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#4A7A5E",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "iBCSk",
+                          "fill": "#2C2A26",
+                          "content": "ok",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "q5K1m",
+                          "fill": "#A8A296",
+                          "content": "#4A7A5E",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c8CewK",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LlKEn",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jJGAp",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#B8863B",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "fixjR",
+                          "fill": "#2C2A26",
+                          "content": "warn",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ziEb1",
+                          "fill": "#A8A296",
+                          "content": "#B8863B",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q5x5C",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "fD9HT",
+                          "width": "fill_container",
+                          "height": 28,
+                          "fill": "#A84234",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "q6zv7L",
+                          "fill": "#2C2A26",
+                          "content": "fail",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c4sDHQ",
+                          "fill": "#A8A296",
+                          "content": "#A84234",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xjbkp",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "V7CBAc",
+              "fill": "#2C2A26",
+              "content": "字体两族六档",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "rj7WM",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "L1DMd",
+                  "fill": "#2C2A26",
+                  "content": "荣河读书 44",
+                  "fontFamily": "Noto Serif SC",
+                  "fontSize": 28,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "QCDEW",
+                  "fill": "#2C2A26",
+                  "content": "书名 34 三体",
+                  "fontFamily": "Noto Serif SC",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "BZd4m",
+                  "fill": "#2C2A26",
+                  "content": "正文 28 一屏一事，安静克制",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cXMqL",
+                  "fill": "#6B675E",
+                  "content": "辅助 24 已读 3 天",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "b89vk",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "SZAjV",
+              "fill": "#2C2A26",
+              "content": "组件基线",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "FYHQG",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E8E2D6",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XAkvL",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UDbqD",
+                      "width": 150,
+                      "height": 44,
+                      "fill": "#2F4154",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QUzFb",
+                          "fill": "#FFFFFF",
+                          "content": "继续阅读",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KoKgB",
+                      "width": 148,
+                      "height": 44,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": "#2F4154",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XGJWa",
+                          "fill": "#2F4154",
+                          "content": "更新进度",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BhMLs",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sSksB",
+                      "fill": "#6B675E",
+                      "content": "进度条 8 高 朱砂填充",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A8KdIb",
+                      "width": "fill_container",
+                      "height": 8,
+                      "fill": "#F1ECE1",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V0HhUR",
+                      "width": 186,
+                      "height": 8,
+                      "fill": "#B03A2E",
+                      "cornerRadius": 4
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UvMec",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "CRUfB",
+                      "width": 72,
+                      "height": 32,
+                      "fill": "#2F4154",
+                      "cornerRadius": 16,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kPgt9",
+                          "fill": "#FFFFFF",
+                          "content": "历史",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RVM5S",
+                      "width": 72,
+                      "height": 32,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 16,
+                      "stroke": "#E8E2D6",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TVpgx",
+                          "fill": "#2C2A26",
+                          "content": "文学",
+                          "fontFamily": "Noto Sans SC",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KoN1s",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "S11Ci",
+              "fill": "#2C2A26",
+              "content": "印章元素 仅打卡体系",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "kB7cT",
+              "width": "fill_container",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "W3iqK",
+                  "width": 64,
+                  "height": 64,
+                  "fill": "#B03A2E",
+                  "cornerRadius": 32,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Mtx4h",
+                      "fill": "#FFFFFF",
+                      "content": "阅",
+                      "fontFamily": "Noto Serif SC",
+                      "fontSize": 28,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "y1cZ7",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#B03A2E",
+                  "cornerRadius": 6,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J5y01",
+                      "fill": "#FFFFFF",
+                      "content": "8",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Omoz5",
+                  "fill": "#6B675E",
+                  "content": "目标达成徽记 / 月历日格印",
+                  "fontFamily": "Noto Sans SC",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kEJqN",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#1E2B38",
+          "cornerRadius": 12,
+          "gap": 16,
+          "padding": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "enPdZ",
+              "fill": "#F4EFE6",
+              "content": "00:26:41",
+              "fontFamily": "Noto Serif SC",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "sJ50g",
+              "opacity": 0.65,
+              "fill": "#F4EFE6",
+              "content": "计时页专属 night 底",
+              "fontFamily": "Noto Sans SC",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
