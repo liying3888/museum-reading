@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mdd.common.aop.NotLogin;
 import com.mdd.common.core.AjaxResult;
+import com.mdd.front.LikeFrontThreadLocal;
 import com.mdd.common.entity.books.Book;
 import com.mdd.common.entity.books.Bookshelf;
 import com.mdd.common.mapper.books.BookMapper;
@@ -38,9 +39,8 @@ public class BookshelfController {
     public AjaxResult list(@RequestParam(defaultValue = "1") Integer pageNo,
                           @RequestParam(defaultValue = "15") Integer pageSize,
                           @RequestParam(required = false) Integer status) {
-        // TODO: 从token获取用户ID，这里先用1测试
-        Integer userId = 1;
-        
+        Integer userId = LikeFrontThreadLocal.getUserId();
+
         QueryWrapper<Bookshelf> wrapper = new QueryWrapper<>();
         wrapper.eq("user_id", userId);
         if (status != null) {
@@ -86,8 +86,7 @@ public class BookshelfController {
             return AjaxResult.failed("书籍不存在");
         }
         
-        // TODO: 从token获取用户ID
-        Integer userId = 1;
+        Integer userId = LikeFrontThreadLocal.getUserId();
         
         // 检查是否已在书架
         QueryWrapper<Bookshelf> wrapper = new QueryWrapper<>();
@@ -128,8 +127,7 @@ public class BookshelfController {
             return AjaxResult.failed("书籍不存在");
         }
         
-        // TODO: 从token获取用户ID
-        Integer userId = 1;
+        Integer userId = LikeFrontThreadLocal.getUserId();
         
         // 更新书架记录
         QueryWrapper<Bookshelf> wrapper = new QueryWrapper<>();
@@ -176,8 +174,7 @@ public class BookshelfController {
             return AjaxResult.failed("参数错误");
         }
         
-        // TODO: 从token获取用户ID
-        Integer userId = 1;
+        Integer userId = LikeFrontThreadLocal.getUserId();
         
         QueryWrapper<Bookshelf> wrapper = new QueryWrapper<>();
         wrapper.eq("user_id", userId).eq("book_id", bookId);

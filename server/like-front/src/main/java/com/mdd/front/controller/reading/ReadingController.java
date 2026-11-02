@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mdd.common.core.AjaxResult;
 import com.mdd.common.entity.books.ReadingRecord;
 import com.mdd.common.mapper.books.ReadingRecordMapper;
+import com.mdd.front.LikeFrontThreadLocal;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
@@ -22,8 +23,7 @@ public class ReadingController {
     @PostMapping("/start")
     @ApiOperation(value = "开始计时")
     public AjaxResult start(@RequestBody(required = false) Map<String, Integer> params) {
-        // TODO: 从token获取用户ID
-        Integer userId = 1;
+        Integer userId = LikeFrontThreadLocal.getUserId();
         
         Integer bookId = params != null ? params.get("book_id") : null;
         
@@ -55,6 +55,12 @@ public class ReadingController {
         if (record == null) {
             return AjaxResult.failed("记录不存在");
         }
+
+        // 归属校验：仅本人可结束自己的阅读记录
+        Integer userId = LikeFrontThreadLocal.getUserId();
+        if (!record.getUserId().equals(userId)) {
+            return AjaxResult.failed("无权操作该记录");
+        }
         
         int endTime = (int)(System.currentTimeMillis() / 1000);
         int duration = endTime - record.getStartTime();
@@ -75,8 +81,7 @@ public class ReadingController {
     @GetMapping("/stats")
     @ApiOperation(value = "阅读统计")
     public AjaxResult stats() {
-        // TODO: 从token获取用户ID
-        Integer userId = 1;
+        Integer userId = LikeFrontThreadLocal.getUserId();
         
         int todayTotal = getTodayTotal(userId);
         int weekTotal = getWeekTotal(userId);
@@ -96,8 +101,7 @@ public class ReadingController {
     @ApiOperation(value = "阅读记录")
     public AjaxResult records(@RequestParam(defaultValue = "1") Integer pageNo,
                              @RequestParam(defaultValue = "20") Integer pageSize) {
-        // TODO: 从token获取用户ID
-        Integer userId = 1;
+        Integer userId = LikeFrontThreadLocal.getUserId();
         
         QueryWrapper<ReadingRecord> wrapper = new QueryWrapper<>();
         wrapper.eq("user_id", userId).orderByDesc("create_time");

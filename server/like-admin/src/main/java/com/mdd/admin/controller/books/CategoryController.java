@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("adminapi/category")
+@RequestMapping("api/category")
 @Api(tags = "分类管理")
 public class CategoryController {
 

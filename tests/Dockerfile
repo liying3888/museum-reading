@@ -9,4 +9,4 @@ RUN pip install --no-cache-dir pytest requests pytest-html
 COPY . /app/tests/
 
 # 运行测试
-CMD ["pytest", "-v", "--html=reports/test-report.html", "tests/"
+CMD ["pytest", "-v", "--html=reports/test-report.html", "tests/"]

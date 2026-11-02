@@ -6,7 +6,9 @@ target/
 application-dev.yml
 application-pro.yml
 application-dem.yml
-application-prod.yml
 application-test.yml
+# application-prod.yml 入库（占位符版，值全部来自环境变量，无秘密）：
+# 2026-11-02 修复 Day1-5 交接断层——prod 配置从未提交导致 fresh clone 后端必挂。
+# 真实部署的私有覆盖请挂载外部文件并配 SPRING_CONFIG_ADDITIONAL_LOCATION，勿把密码写回库内。
 /public/uploads/*
 !/public/uploads/index.html

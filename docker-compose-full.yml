@@ -2,6 +2,8 @@ services:
   # MySQL 数据库
   mysql:
     image: mysql:5.7.29
+    # mysql:5.7 仅发布 amd64 镜像；arm64 机器（Apple Silicon）经 QEMU 模拟运行，已验证可用
+    platform: linux/amd64
     container_name: museum-mysql
     restart: always
     environment:

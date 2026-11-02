@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("adminapi/book")
+@RequestMapping("api/book")
 @Api(tags = "书籍管理")
 public class BookController {
 

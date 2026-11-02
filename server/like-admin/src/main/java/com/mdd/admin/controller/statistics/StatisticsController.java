@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 import java.util.Map;
 
 @RestController
-@RequestMapping("adminapi/statistics")
+@RequestMapping("api/statistics")
 @Api(tags = "数据统计")
 public class StatisticsController {
 
