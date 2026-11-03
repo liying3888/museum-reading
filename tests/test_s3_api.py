@@ -143,6 +143,46 @@ class TestBooksList:
         ).json()
         assert r1["data"]["count"] == r2["data"]["count"], "两页 count 应一致"
 
+    def test_category_filter_diff(self):
+        # 补强令（leader 2026-11-04）：传/不传 category_id 列表集必须有差异——
+        # camelCase 吞参 bug 时过滤静默失效返回全量，仅靠「纯」断言不足防回归
+        r_all = requests.get(f"{FRONT_BASE}/api/front/books/list", timeout=TIMEOUT).json()
+        categories = r_all["data"]["categories"]
+        # 选一个「过滤后少于全量」的分类（库内多分类时必存在）
+        all_ids = {b["id"] for b in r_all["data"]["lists"]}
+        diff_cid = None
+        for cate in categories:
+            r = requests.get(
+                f"{FRONT_BASE}/api/front/books/list",
+                params={"category_id": cate["id"]},
+                timeout=TIMEOUT,
+            ).json()
+            ids = {b["id"] for b in r["data"]["lists"]}
+            assert all(
+                b["category_id"] == cate["id"] for b in r["data"]["lists"]
+            ), f"分类 {cate['id']} 过滤不纯"
+            if len(ids) < len(all_ids):
+                diff_cid = cate["id"]
+                break
+        assert diff_cid is not None, "库内应存在过滤后少于全量的分类（多分类数据前提）"
+
+    def test_pagination_no_overlap(self):
+        # 补强令（leader 2026-11-04）：page_no=2 与第 1 页 id 集不重合——
+        # defaultValue 掩盖盲区（page_no 被吞时两页返回同一段数据，count 断言测不出）
+        r1 = requests.get(
+            f"{FRONT_BASE}/api/front/books/list", params={"page_size": 2}, timeout=TIMEOUT
+        ).json()
+        assert r1["data"]["count"] > 2, "库内应多于 2 本才可验翻页"
+        r2 = requests.get(
+            f"{FRONT_BASE}/api/front/books/list",
+            params={"page_no": 2, "page_size": 2},
+            timeout=TIMEOUT,
+        ).json()
+        ids1 = {b["id"] for b in r1["data"]["lists"]}
+        ids2 = {b["id"] for b in r2["data"]["lists"]}
+        assert ids2, "第 2 页不应为空（库内 >2 本）"
+        assert not (ids1 & ids2), f"翻页数据重合: {ids1 & ids2}（page_no 被忽略疑似）"
+
 
 class TestBooksDetail:
     """B2 书籍详情"""

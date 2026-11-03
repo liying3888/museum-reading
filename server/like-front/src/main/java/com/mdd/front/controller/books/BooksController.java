@@ -35,9 +35,9 @@ public class BooksController {
     @NotLogin
     @GetMapping("/list")
     @ApiOperation(value = "B1 书籍列表")
-    public AjaxResult list(@RequestParam(defaultValue = "1") Integer pageNo,
-                           @RequestParam(defaultValue = "15") Integer pageSize,
-                           @RequestParam(required = false) Integer categoryId,
+    public AjaxResult list(@RequestParam(name = "page_no", defaultValue = "1") Integer pageNo,
+                           @RequestParam(name = "page_size", defaultValue = "15") Integer pageSize,
+                           @RequestParam(name = "category_id", required = false) Integer categoryId,
                            @RequestParam(required = false) String keyword) {
         QueryWrapper<Book> wrapper = new QueryWrapper<>();
         wrapper.eq("status", 1);
@@ -47,8 +47,9 @@ public class BooksController {
         if (StringUtils.isNotBlank(keyword)) {
             wrapper.and(w -> w.like("title", keyword).or().like("author", keyword));
         }
-        // 排序口径：id DESC 近似上架时间倒序+录入序 tie-break（§6 决策点④，运营置顶留迭代）
-        wrapper.orderByDesc("id");
+        // 排序口径：上架时间倒序，同日 tie-break=录入序 id 升序（06 §5 round7 补正，
+        // 原 id DESC 的同日序与示样「人类简史先于活着」相反；§6 决策点④，运营置顶留迭代）
+        wrapper.orderByDesc("create_time").orderByAsc("id");
 
         IPage<Book> page = bookMapper.selectPage(new Page<>(pageNo, pageSize), wrapper);
 

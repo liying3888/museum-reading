@@ -164,8 +164,8 @@ public class ReadingController {
     /** 阅读记录分页（记录管理列表：返 auto_closed/book_title/duration，02 §0.3 兜底③） */
     @GetMapping("/records")
     @ApiOperation(value = "阅读记录")
-    public AjaxResult records(@RequestParam(defaultValue = "1") Integer pageNo,
-                              @RequestParam(defaultValue = "20") Integer pageSize) {
+    public AjaxResult records(@RequestParam(name = "page_no", defaultValue = "1") Integer pageNo,
+                              @RequestParam(name = "page_size", defaultValue = "20") Integer pageSize) {
         Integer userId = LikeFrontThreadLocal.getUserId();
 
         QueryWrapper<ReadingRecord> wrapper = new QueryWrapper<>();

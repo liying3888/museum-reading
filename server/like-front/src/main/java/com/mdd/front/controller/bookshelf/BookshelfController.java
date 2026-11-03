@@ -42,8 +42,8 @@ public class BookshelfController {
      */
     @GetMapping("/list")
     @ApiOperation(value = "我的书架")
-    public AjaxResult list(@RequestParam(defaultValue = "1") Integer pageNo,
-                          @RequestParam(defaultValue = "15") Integer pageSize,
+    public AjaxResult list(@RequestParam(name = "page_no", defaultValue = "1") Integer pageNo,
+                          @RequestParam(name = "page_size", defaultValue = "15") Integer pageSize,
                           @RequestParam(required = false) Integer status) {
         Integer userId = LikeFrontThreadLocal.getUserId();
 
