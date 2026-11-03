@@ -14,4 +14,7 @@ application-test.yml
 # 协作任务卡属内部过程件（含岗岗协调细节），public 外包仓不暴露内部协作结构（leader 2026-11-02 决策）
 task-cards/
 /public/uploads/*
-!/public/uploads/index.html.DS_Store
+!/public/uploads/index.html
+
+# macOS 元数据（曾因追加未换行挤进上行白名单致规则双双失效，2026-11-03 修）
+.DS_Store
