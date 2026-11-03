@@ -20,6 +20,8 @@ export const useUserStore = defineStore({
     },
     actions: {
         async getUser() {
+            // 未登录是正常态：无 token 不请求，静默返回（修 App onLaunch 未处理报错）
+            if (!this.token && !this.temToken) return
             const data = await getUserCenter({
                 token: this.token || this.temToken
             })

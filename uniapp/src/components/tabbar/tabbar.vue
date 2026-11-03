@@ -7,6 +7,7 @@
         active-color="#2F4154"
         inactive-color="#6B675E"
         :border-top="true"
+        :hide-tab-bar="false"
         @change="handleChange"
     ></u-tabbar>
 </template>
