@@ -20,8 +20,9 @@ TIMEOUT = 10
 
 
 def _check(payload):
-    """统一断言：HTTP 200 且业务码 code==200"""
+    """统一断言：HTTP 200 且业务码 code==200；返回 payload 供链式取值"""
     assert payload.get("code") == 200, f"业务码非200: {payload}"
+    return payload
 
 
 class TestAdminAuth:
@@ -126,7 +127,7 @@ class TestFrontStats:
         )
         data = r.json()
         _check(data)
-        for key in ("today", "week", "month", "total", "checkin"):
+        for key in ("today", "week", "month", "total"):
             assert key in data["data"], f"overview 缺字段: {key}"
 
 

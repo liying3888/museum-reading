@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
@@ -15,6 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages = {"com.mdd"})
 @MapperScan(basePackages = {"com.mdd.*.mapper"})
 @EnableTransactionManagement
+@EnableScheduling
 @SpringBootApplication(exclude = {RedisRepositoriesAutoConfiguration.class})
 public class LikeFrontApplication {
 
