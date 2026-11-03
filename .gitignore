@@ -18,3 +18,6 @@ task-cards/
 
 # macOS 元数据（曾因追加未换行挤进上行白名单致规则双双失效，2026-11-03 修）
 .DS_Store
+
+# Python 测试缓存（批 2 pytest 引入，leader 提交指令：排除）
+__pycache__/

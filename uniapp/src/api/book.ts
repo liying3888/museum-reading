@@ -1,41 +1,32 @@
 import request from '@/utils/request'
 
-// 书籍列表
-export function bookList(params: any) {
-  return request.get({ url: '/api/front/books/list', data: params })
+// 书籍域（公开接口，无需登录）——契约 B1/B2（docs/S3/01 §2.1）
+// 注意：url 不带 /api 前缀（request 拦截器 urlPrefix 已统一拼，S1 双前缀 404 病根）
+
+/**
+ * B1 书籍列表（书库页/首页书单）
+ * @param params { page_no, page_size, category_id?, keyword? }
+ */
+export function bookList(params: {
+    page_no?: number
+    page_size?: number
+    category_id?: number
+    keyword?: string
+}) {
+    return request.get({ url: '/front/books/list', data: params })
 }
 
-// 书籍详情
+/**
+ * B2 书籍详情（详情页头区）
+ */
 export function bookDetail(id: number) {
-  return request.get({ url: '/api/front/books/detail', data: { id } })
+    return request.get({ url: '/front/books/detail', data: { id } })
 }
 
-// 书架列表
-export function bookshelfList(params: any) {
-  return request.get({ url: '/api/front/bookshelf/list', data: params })
-}
-
-// 加入书架
-export function bookshelfAdd(bookId: number) {
-  return request.post({ url: '/api/front/bookshelf/add', data: { book_id: bookId } })
-}
-
-// 更新进度
-export function bookshelfProgress(bookId: number, currentPage: number) {
-  return request.post({ url: '/api/front/bookshelf/progress', data: { book_id: bookId, current_page: currentPage } })
-}
-
-// 开始阅读
-export function readingStart(bookId?: number) {
-  return request.post({ url: '/api/front/reading/start', data: { book_id: bookId } })
-}
-
-// 结束阅读
-export function readingEnd(recordId: number) {
-  return request.post({ url: '/api/front/reading/end', data: { record_id: recordId } })
-}
-
-// 阅读统计
-export function readingStats() {
-  return request.get({ url: '/api/front/reading/stats' })
-}
+// ---------- 过渡 shim（存量页旧 import 兼容，批 3 页面重写时随引用消失移除）----------
+import { bookshelfList, bookshelfAdd } from './bookshelf'
+import { statsOverview } from './stats'
+import { readingStart, readingEnd } from './reading'
+export { bookshelfList, bookshelfAdd, readingStart, readingEnd }
+/** 旧版阅读统计入口 → 统计概览（旧 reading/stats 端点已由 stats 域 overview 承接） */
+export const readingStats = statsOverview
