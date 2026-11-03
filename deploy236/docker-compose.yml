@@ -1,0 +1,161 @@
+# ops70 20261103 卡003 museum 栈 236 常驻版（源 docker-compose-full.yml 改造）
+# 改造点：tester 剔除；mysql/redis 不映射宿主（容器网内）；web 四面整段偏移 1808x（8082 已占避雷）
+# 口令 env 化（.env 生成强口令，弱口令 root 不上 236）
+name: museum
+
+services:
+  mysql:
+    image: mysql:5.7.29
+    container_name: museum-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MUSEUM_MYSQL_PASSWORD:?set in .env}"
+      MYSQL_DATABASE: likeadmin_java
+      TZ: Asia/Shanghai
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./seed-init.sql:/docker-entrypoint-initdb.d/01-seed.sql:ro
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci --default-authentication-plugin=mysql_native_password
+    networks:
+      - museum-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p$${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    mem_limit: 1g
+
+  redis:
+    image: redis:7.0.4
+    container_name: museum-redis
+    restart: always
+    volumes:
+      - redis_data:/data
+    networks:
+      - museum-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    mem_limit: 256m
+
+  backend:
+    build:
+      context: ../server
+      dockerfile: Dockerfile
+    image: museum-backend:1.0.0
+    container_name: museum-backend
+    restart: always
+    ports:
+      - "0.0.0.0:18082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=likeadmin_java
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=${MUSEUM_MYSQL_PASSWORD:?set in .env}
+      - REDIS_HOST=redis
+      - TZ=Asia/Shanghai
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./server-logs:/app/logs
+      - upload_data:/app/uploads
+    networks:
+      - museum-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8082/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+    mem_limit: 1280m
+
+  frontend:
+    build:
+      context: ../server
+      dockerfile: Dockerfile.front
+    image: museum-frontend:1.0.0
+    container_name: museum-frontend
+    restart: always
+    ports:
+      - "0.0.0.0:18085:8085"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SERVER_PORT=8085
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=likeadmin_java
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=${MUSEUM_MYSQL_PASSWORD:?set in .env}
+      - REDIS_HOST=redis
+      - TZ=Asia/Shanghai
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./front-logs:/app/logs
+      - upload_data:/app/uploads
+    networks:
+      - museum-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8085/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+    mem_limit: 1280m
+
+  miniapp:
+    build:
+      context: ../uniapp
+      dockerfile: Dockerfile.miniapp
+      args:
+        - BUILD_ENV=production
+    image: museum-miniapp:1.0.0
+    container_name: museum-miniapp
+    restart: always
+    ports:
+      - "0.0.0.0:18083:80"
+    volumes:
+      - ../nginx/miniapp.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - museum-network
+    depends_on:
+      - backend
+      - frontend
+    mem_limit: 128m
+
+  admin:
+    build:
+      context: ../admin
+      dockerfile: Dockerfile
+      args:
+        - BUILD_ENV=production
+    image: museum-admin:1.0.0
+    container_name: museum-admin
+    restart: always
+    ports:
+      - "0.0.0.0:18084:80"
+    volumes:
+      - ../nginx/admin.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - museum-network
+    depends_on:
+      - backend
+      - frontend
+    mem_limit: 128m
+
+networks:
+  museum-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+  redis_data:
+  upload_data:
