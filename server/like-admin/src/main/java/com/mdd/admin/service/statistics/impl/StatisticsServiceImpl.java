@@ -5,6 +5,7 @@ import com.mdd.admin.service.statistics.IStatisticsService;
 import com.mdd.common.entity.books.Book;
 import com.mdd.common.entity.books.Bookshelf;
 import com.mdd.common.entity.books.ReadingRecord;
+import com.mdd.common.mapper.books.BookCategoryMapper;
 import com.mdd.common.mapper.books.BookMapper;
 import com.mdd.common.mapper.books.BookshelfMapper;
 import com.mdd.common.mapper.books.ReadingRecordMapper;
@@ -19,9 +20,12 @@ public class StatisticsServiceImpl implements IStatisticsService {
 
     @Resource
     private UserMapper userMapper;
-    
+
     @Resource
     private BookMapper bookMapper;
+
+    @Resource
+    private BookCategoryMapper bookCategoryMapper;
     
     @Resource
     private BookshelfMapper bookshelfMapper;
@@ -32,29 +36,42 @@ public class StatisticsServiceImpl implements IStatisticsService {
     @Override
     public Map<String, Object> getOverview() {
         Map<String, Object> result = new HashMap<>();
-        
+
         // 用户总数
         Long userCount = userMapper.selectCount(new QueryWrapper<>());
         result.put("userCount", userCount);
-        
-        // 书籍总数
+
+        // 书籍总数（全部）+ 在架数（04 看板口径）
+        Long totalBookCount = bookMapper.selectCount(new QueryWrapper<>());
+        result.put("totalBookCount", totalBookCount);
         QueryWrapper<Book> bookQuery = new QueryWrapper<>();
         bookQuery.eq("status", 1);
         Long bookCount = bookMapper.selectCount(bookQuery);
         result.put("bookCount", bookCount);
-        
+
         // 分类总数
-        Long categoryCount = 0L;
+        Long categoryCount = bookCategoryMapper.selectCount(
+                new QueryWrapper<com.mdd.common.entity.books.BookCategory>().eq("status", 1));
         result.put("categoryCount", categoryCount);
-        
+
         // 阅读记录总数
         Long readingCount = readingRecordMapper.selectCount(new QueryWrapper<>());
         result.put("readingCount", readingCount);
-        
+
+        // 今日阅读人次（今日新增阅读记录数，04 看板口径）
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        Long todayReadingCount = readingRecordMapper.selectCount(
+                new QueryWrapper<ReadingRecord>().ge("start_time", (int)(cal.getTimeInMillis() / 1000)));
+        result.put("todayReadingCount", todayReadingCount);
+
         // 书架书籍总数
         Long bookshelfCount = bookshelfMapper.selectCount(new QueryWrapper<>());
         result.put("bookshelfCount", bookshelfCount);
-        
+
         return result;
     }
 

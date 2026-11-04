@@ -21,7 +21,7 @@
                     <view v-if="book.category_name" class="d-cat">
                         {{ book.category_name }}
                     </view>
-                    <view v-if="book.rating != null" class="d-rating">
+                    <view v-if="book.rating" class="d-rating">
                         <svg-icon name="f-star-fill" :size="24" color="var(--gold)" />
                         <text>{{ book.rating }}</text>
                     </view>

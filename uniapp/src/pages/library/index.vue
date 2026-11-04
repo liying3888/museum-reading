@@ -78,7 +78,7 @@
                             {{ b.category_name }}
                         </view>
                         <view class="b-meta">
-                            <view v-if="b.rating != null" class="b-rating">
+                            <view v-if="b.rating" class="b-rating">
                                 <svg-icon name="f-star-fill" :size="22" color="var(--gold)" />
                                 <text>{{ b.rating }}</text>
                             </view>

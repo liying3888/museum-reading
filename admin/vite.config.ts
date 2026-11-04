@@ -13,7 +13,14 @@ import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 export default defineConfig({
     // base: '/admin/',
     server: {
-        host: '0.0.0.0'
+        host: '0.0.0.0',
+        proxy: {
+            // 开发代理：admin 前端 /api → like-admin 8082（likeadmin 惯例，.env 不动）
+            '/api': {
+                target: 'http://localhost:8082',
+                changeOrigin: true
+            }
+        }
     },
     plugins: [
         vue(),

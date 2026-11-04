@@ -67,7 +67,7 @@ public class BooksController {
         if (pageNo == 1) {
             List<Map<String, Object>> categories = new ArrayList<>();
             for (BookCategory cate : bookCategoryMapper.selectList(
-                    new QueryWrapper<BookCategory>().orderByAsc("id"))) {
+                    new QueryWrapper<BookCategory>().eq("status", 1).orderByAsc("id"))) {
                 Map<String, Object> item = new HashMap<>();
                 item.put("id", cate.getId());
                 item.put("name", cate.getName());

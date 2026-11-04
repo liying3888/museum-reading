@@ -28,11 +28,19 @@ public class BookController {
     public AjaxResult list(@RequestParam(defaultValue = "1") Integer pageNo,
                           @RequestParam(defaultValue = "15") Integer pageSize,
                           @RequestParam(required = false) String title,
-                          @RequestParam(required = false) Integer categoryId) {
+                          @RequestParam(required = false) String author,
+                          @RequestParam(required = false) Integer categoryId,
+                          @RequestParam(required = false) Integer status) {
         QueryWrapper<Book> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("status", 1);
+        // status 不传=全部（admin 列表需见下架书）；C 端接口自带上架过滤
+        if (status != null) {
+            queryWrapper.eq("status", status);
+        }
         if (StringUtils.isNotEmpty(title)) {
             queryWrapper.like("title", title);
+        }
+        if (StringUtils.isNotEmpty(author)) {
+            queryWrapper.like("author", author);
         }
         if (categoryId != null) {
             queryWrapper.eq("category_id", categoryId);
