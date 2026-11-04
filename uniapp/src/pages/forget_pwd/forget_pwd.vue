@@ -1,9 +1,9 @@
 <template>
     <view
-        class="register bg-white min-h-full flex flex-col items-center px-[40rpx] pt-[100rpx] box-border"
+        class="register bg-page min-h-full flex flex-col items-center px-[40rpx] pt-[100rpx] box-border"
     >
         <view class="w-full">
-            <view class="text-2xl font-medium mb-[60rpx]">忘记登录密码</view>
+            <view class="text-2xl font-medium mb-[60rpx]" style="font-family: var(--font-serif)">忘记登录密码</view>
             <u-form borderBottom :label-width="150">
                 <u-form-item label="手机号" borderBottom>
                     <u-input

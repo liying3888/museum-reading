@@ -30,7 +30,7 @@
             <!-- 在读 Tab 专属找书件：搜索+长按置顶（02 §4.1②） -->
             <view v-if="activeTab === 1" class="shelf-tools">
                 <view class="search-box">
-                    <view class="s-icon"><view class="ring" /><view class="handle" /></view>
+                    <view class="s-icon"><svg-icon name="f-search" :size="26" color="var(--ink-3)" /></view>
                     <input
                         class="s-input"
                         v-model="keyword"
@@ -399,29 +399,9 @@ onPullDownRefresh(() => {
     border-radius: 40rpx;
 
     .s-icon {
-        position: relative;
         width: 26rpx;
         height: 26rpx;
         flex-shrink: 0;
-
-        .ring {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 18rpx;
-            height: 18rpx;
-            border: 3rpx solid var(--ink-3);
-            border-radius: 50%;
-        }
-        .handle {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 10rpx;
-            height: 3rpx;
-            background: var(--ink-3);
-            transform: rotate(45deg);
-        }
     }
     .s-input {
         flex: 1;

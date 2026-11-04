@@ -1,6 +1,6 @@
 <template>
     <view
-        class="register bg-white min-h-full flex flex-col items-center px-[40rpx] pt-[40rpx] box-border"
+        class="register bg-page min-h-full flex flex-col items-center px-[40rpx] pt-[40rpx] box-border"
     >
         <view class="w-full">
             <u-form borderBottom :label-width="150">

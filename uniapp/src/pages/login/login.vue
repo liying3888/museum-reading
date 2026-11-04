@@ -1,11 +1,11 @@
 <template>
     <view
-        class="bg-white login min-h-full flex flex-col items-center px-[40rpx] pt-[80rpx] box-border"
+        class="bg-page login min-h-full flex flex-col items-center px-[40rpx] pt-[80rpx] box-border"
     >
         <view>
-            <u-image :src="appStore.config.website.logo" mode="widthFix" height="160" width="160" />
+            <u-image :src="websiteConfig.logo" mode="widthFix" height="160" width="160" />
         </view>
-        <view class="mt-4 text-xl font-medium">{{ appStore.config.website.name }}</view>
+        <view class="mt-4 text-xl font-medium" style="font-family: var(--font-serif)">{{ websiteConfig.name }}</view>
         <view class="w-full mt-[60rpx] pb-[60rpx]">
             <u-form borderBottom>
                 <template
@@ -238,11 +238,11 @@ const changeLoginWay = (type: LoginTypeEnum, way: LoginWayEnum) => {
 }
 
 const includeLoginWay = (way: LoginWayEnum) => {
-    return appStore.getLoginConfig.loginWay.includes(way)
+    return (appStore.getLoginConfig.loginWay || []).includes(way)
 }
 
 const includeAuthWay = (way: LoginAuthEnum) => {
-    return appStore.getLoginConfig.autoLoginAuth.includes(way)
+    return (appStore.getLoginConfig.autoLoginAuth || []).includes(way)
 }
 
 const isOpenAgreement = computed(() => appStore.getLoginConfig.openAgreement == 1)

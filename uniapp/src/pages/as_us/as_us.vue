@@ -1,6 +1,6 @@
 <template>
     <view class="as-us flex flex-1 flex-col items-center">
-        <image :src="appStore.config.website.logo" mode="" class="img"></image>
+        <image :src="appStore.getWebsiteConfig.logo" mode="" class="img"></image>
         <view class="text-content mt-[20rpx]">当前版本{{ appStore.config.version }}</view>
     </view>
 </template>

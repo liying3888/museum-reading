@@ -78,9 +78,10 @@
                             {{ b.category_name }}
                         </view>
                         <view class="b-meta">
-                            <text v-if="b.rating != null" class="b-rating">
-                                ★ {{ b.rating }}
-                            </text>
+                            <view v-if="b.rating != null" class="b-rating">
+                                <svg-icon name="f-star-fill" :size="22" color="var(--gold)" />
+                                <text>{{ b.rating }}</text>
+                            </view>
                             <text class="b-pages">共 {{ b.pages }} 页</text>
                         </view>
                     </view>
@@ -385,6 +386,9 @@ function goDetail(id: number) {
             gap: 24rpx;
 
             .b-rating {
+                display: flex;
+                align-items: center;
+                gap: 4rpx;
                 font-size: 24rpx;
                 color: var(--gold);
             }

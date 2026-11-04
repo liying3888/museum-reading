@@ -120,13 +120,6 @@
             }
         },
         {
-            "path": "pages/payment_result/payment_result",
-            "style": {
-                "navigationBarTitleText": "支付结果"
-            },
-            "auth": true
-        },
-        {
             "path": "pages/book/detail",
             "style": {
                 "navigationBarTitleText": "书籍详情"
@@ -172,34 +165,6 @@
                 "navigationBarTitleText": "头像裁剪",
                 "navigationBarBackgroundColor": "#000000"
             }
-        }
-    ],
-    "subPackages": [
-        {
-            "root": "packages",
-            "pages": [
-                {
-                    "path": "pages/user_wallet/user_wallet",
-                    "style": {
-                        "navigationBarTitleText": "我的钱包"
-                    },
-                    "auth": true
-                },
-                {
-                    "path": "pages/recharge/recharge",
-                    "style": {
-                        "navigationBarTitleText": "充值"
-                    },
-                    "auth": true
-                },
-                {
-                    "path": "pages/recharge_record/recharge_record",
-                    "style": {
-                        "navigationBarTitleText": "充值记录"
-                    },
-                    "auth": true
-                }
-            ]
         }
     ],
     "globalStyle": {

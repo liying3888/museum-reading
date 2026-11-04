@@ -14,7 +14,8 @@ onLaunch(async () => {
         uni.reLaunch({ url: '/pages/empty/empty' })
     }
     // #endif
-    await getUser()
+    // token 失效属正常态（拦截器已 logout 清缓存），勿让 onLaunch 挂 unhandled reject
+    await getUser().catch(() => {})
 })
 </script>
 <style lang="scss">

@@ -5,18 +5,18 @@ module.exports = {
         colors: {
             white: '#ffffff',
             black: '#000000',
-            main: '#333333',
-            content: '#666666',
-            muted: '#999999',
-            light: '#e5e5e5',
+            main: '#2c2a26',
+            content: '#6b675e',
+            muted: '#a8a296',
+            light: '#e8e2d6',
             primary: {
-                DEFAULT: '#4173ff'
+                DEFAULT: '#2f4154'
             },
             success: '#5ac725',
             warning: '#f9ae3d',
             error: '#f56c6c',
             info: '#909399',
-            page: '#f6f6f6'
+            page: '#f8f5ef'
         },
         fontSize: {
             xs: '24rpx',

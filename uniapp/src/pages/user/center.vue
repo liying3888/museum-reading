@@ -58,6 +58,7 @@
             <!-- 菜单列表（02 §7.4） -->
             <view class="card menu-card">
                 <view v-for="m in menus" :key="m.label" class="m-row" @tap="onMenu(m)">
+                    <svg-icon :name="m.icon" :size="36" color="var(--ink-2)" />
                     <text class="m-label">{{ m.label }}</text>
                     <view class="m-arrow" />
                 </view>
@@ -133,13 +134,13 @@ const ringStyle = computed(() => ({
 
 // 菜单（底座页复用：user_set/as_us/customer_service/agreement）
 const menus = [
-    { label: '我的书架', to: '/pages/bookshelf/index' },
-    { label: '阅读统计', to: '/pages/stats/index' },
-    { label: '关于我们', to: '/pages/as_us/as_us' },
-    { label: '联系客服', to: '/pages/customer_service/customer_service' },
-    { label: '用户协议', to: '/pages/agreement/agreement?type=service' },
-    { label: '隐私政策', to: '/pages/agreement/agreement?type=privacy' },
-    { label: '设置', to: '/pages/user_set/user_set' }
+    { label: '我的书架', icon: 'm-shelf', to: '/pages/bookshelf/index' },
+    { label: '阅读统计', icon: 'm-chart', to: '/pages/stats/index' },
+    { label: '关于我们', icon: 'm-museum', to: '/pages/as_us/as_us' },
+    { label: '联系客服', icon: 'm-chat', to: '/pages/customer_service/customer_service' },
+    { label: '用户协议', icon: 'm-doc', to: '/pages/agreement/agreement?type=service' },
+    { label: '隐私政策', icon: 'm-shield', to: '/pages/agreement/agreement?type=privacy' },
+    { label: '设置', icon: 'm-gear', to: '/pages/user_set/user_set' }
 ]
 
 function onMenu(m: any) {
@@ -382,13 +383,14 @@ onShow(() => {
     .m-row {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 20rpx;
         height: 96rpx;
 
         & + .m-row {
             border-top: 1rpx solid var(--line);
         }
         .m-label {
+            flex: 1;
             font-size: 28rpx;
             color: var(--ink-2);
         }

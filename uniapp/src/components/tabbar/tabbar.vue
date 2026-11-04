@@ -1,56 +1,92 @@
 <template>
-    <u-tabbar
-        v-if="showTabbar"
-        v-model="current"
-        :list="tabbarList"
-        bgcolor="#F8F5EF"
-        active-color="#2F4154"
-        inactive-color="#6B675E"
-        :border-top="true"
-        :hide-tab-bar="false"
-        @change="handleChange"
-    ></u-tabbar>
+    <view v-if="showTabbar" class="tab-bar">
+        <view
+            v-for="(item, i) in tabs"
+            :key="item.path"
+            class="tb-item"
+            @tap="switchTab(item)"
+        >
+            <!-- 底块风（03 §4）：圆角小底块内反白形——未选枯墨底+淡墨形，选中黛蓝底+纯白形 -->
+            <view class="tb-block" :class="{ on: current === i }">
+                <svg-icon :name="item.icon" :size="40" :color="current === i ? '#ffffff' : 'var(--ink-2)'" />
+            </view>
+            <text class="tb-text" :class="{ on: current === i }">{{ item.text }}</text>
+        </view>
+    </view>
 </template>
 
 <script lang="ts" setup>
-// TabBar 四项 —— S3 前端地基（docs/design/01 §3 定稿）
-// 改造自底座原版（appStore 后端配置驱动→内置四项静态配置）：
-// 236 全新 init 库无 tabbar 配置数据，且设计定稿四项为产品结构（首页/书库/书架/我的，
-// 统计不占 Tab 位），不走后端风格配置。图标=底块风 SVG data-uri（icons.ts）。
-import { TABBAR_ICONS } from './icons'
-import { navigateTo } from '@/utils/util'
+// TabBar 四项 —— 批 4 底块风自绘（弃 u-tabbar，17 枚 sprite 体系统一）
+// 语义（01 §3）：首页=卷轴 / 书库=立册 / 书架=书堆 / 我的=印章人
+// 形色随态两制（round7 勘误）：未选 ink-2 淡墨形，选中纯白形；仅底色+形色切换，字重不变（round2 口径）
 import { computed, ref } from 'vue'
+import { navigateTo } from '@/utils/util'
 
-const current = ref()
-
-const TABS = [
-    { path: '/pages/index/index', text: '首页', icon: TABBAR_ICONS.scroll },
-    { path: '/pages/library/index', text: '书库', icon: TABBAR_ICONS.book },
-    { path: '/pages/bookshelf/index', text: '书架', icon: TABBAR_ICONS.stack },
-    { path: '/pages/user/center', text: '我的', icon: TABBAR_ICONS.person }
+const tabs = [
+    { path: '/pages/index/index', text: '首页', icon: 'tab-scroll' },
+    { path: '/pages/library/index', text: '书库', icon: 'tab-book' },
+    { path: '/pages/bookshelf/index', text: '书架', icon: 'tab-stack' },
+    { path: '/pages/user/center', text: '我的', icon: 'tab-sealman' }
 ]
 
-const tabbarList = computed(() =>
-    TABS.map((item) => ({
-        iconPath: item.icon.off,
-        selectedIconPath: item.icon.on,
-        text: item.text,
-        pagePath: item.path,
-        link: { path: item.path }
-    }))
-)
-
-const showTabbar = computed(() => {
-    const currentPages = getCurrentPages()
-    const currentPage = currentPages[currentPages.length - 1]
-    const index = tabbarList.value.findIndex((item: any) => {
-        return item.pagePath === '/' + currentPage.route
-    })
-    return index >= 0
+const current = computed(() => {
+    const pages = getCurrentPages()
+    const route = pages[pages.length - 1]?.route || ''
+    const i = tabs.findIndex((t) => t.path === '/' + route)
+    return i
 })
 
-const handleChange = (index: number) => {
-    const selectTab = tabbarList.value[index]
-    navigateTo(selectTab.link, 'reLaunch')
+const showTabbar = computed(() => current.value >= 0)
+
+function switchTab(item: { path: string }) {
+    navigateTo({ path: item.path, type: 'custom', isTab: true }, 'reLaunch')
 }
 </script>
+
+<style lang="scss" scoped>
+.tab-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background: var(--card);
+    border-top: 1rpx solid var(--line);
+    /* 底部安全区（全面屏手势条） */
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+    z-index: 998;
+}
+
+.tb-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rpx;
+    padding: 12rpx 0 8rpx;
+
+    .tb-block {
+        width: 56rpx;
+        height: 56rpx;
+        border-radius: 10rpx;
+        background: var(--ink-3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.on {
+            background: var(--indigo);
+        }
+    }
+    .tb-text {
+        font-size: 20rpx;
+        color: var(--ink-2);
+
+        &.on {
+            color: var(--indigo);
+        }
+    }
+}
+</style>

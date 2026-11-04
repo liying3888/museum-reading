@@ -2,7 +2,7 @@
     <view class="nav-bar">
         <view class="nav-inner">
             <view class="nav-back" @tap="goBack">
-                <view class="arrow" />
+                <svg-icon name="f-back" :size="26" color="var(--ink)" />
             </view>
             <text class="nav-title">{{ title }}</text>
             <view class="nav-right"><slot name="right" /></view>
@@ -12,7 +12,7 @@
 
 <script lang="ts" setup>
 /**
- * 自绘导航（03 §6 组件基线）：高 88rpx，左返回键（24×24 线性箭头，热区≥88rpx）
+ * 自绘导航（03 §6 组件基线）：高 88rpx，左返回键（f-back sprite，热区≥88rpx）
  * +居中标题 34rpx 衬线——修 S1 统计页困死（无系统返回可用的场景全页统一自绘）
  * 返回兜底：无上级页面（reLaunch 进入）时回首页，不困死
  */
@@ -54,14 +54,6 @@ function goBack() {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    .arrow {
-        width: 22rpx;
-        height: 22rpx;
-        border-left: 3rpx solid var(--ink);
-        border-bottom: 3rpx solid var(--ink);
-        transform: rotate(45deg) translate(2rpx, -2rpx);
-    }
 }
 
 .nav-title {

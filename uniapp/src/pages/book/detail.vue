@@ -22,7 +22,7 @@
                         {{ book.category_name }}
                     </view>
                     <view v-if="book.rating != null" class="d-rating">
-                        <text class="star">★</text>
+                        <svg-icon name="f-star-fill" :size="24" color="var(--gold)" />
                         <text>{{ book.rating }}</text>
                     </view>
                 </view>
@@ -363,14 +363,10 @@ onLoad((options: any) => {
         .d-rating {
             margin-top: auto;
             display: flex;
-            align-items: baseline;
+            align-items: center;
             gap: 8rpx;
             color: var(--gold);
             font-size: 28rpx;
-
-            .star {
-                font-size: 24rpx;
-            }
         }
     }
 }
