@@ -1,5 +1,5 @@
 <template>
-    <view class="shelf-page">
+    <view class="shelf-page" @touchstart="onSwipeStart" @touchend="onSwipeEnd">
         <!-- 页首 -->
         <view class="page-head">
             <text class="head-title">书架</text>
@@ -195,6 +195,23 @@ async function loadAll() {
 function switchTab(i: number) {
     activeTab.value = i
     keyword.value = ''
+}
+
+// —— Tab 横滑手势（02 §128：滑动+点击双通道；水平 60px 起、垂直漂移 <40px 才算） ——
+let touchX = 0
+let touchY = 0
+function onSwipeStart(e: any) {
+    touchX = e.changedTouches?.[0]?.clientX ?? 0
+    touchY = e.changedTouches?.[0]?.clientY ?? 0
+}
+function onSwipeEnd(e: any) {
+    const t = e.changedTouches?.[0]
+    if (!t) return
+    const dx = t.clientX - touchX
+    const dy = Math.abs(t.clientY - touchY)
+    if (Math.abs(dx) < 60 || dy > 40) return
+    if (dx < 0 && activeTab.value < TAB_DEFS.length - 1) switchTab(activeTab.value + 1)
+    if (dx > 0 && activeTab.value > 0) switchTab(activeTab.value - 1)
 }
 
 // —— 动作 ——

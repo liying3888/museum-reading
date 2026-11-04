@@ -308,8 +308,9 @@ class TestForeignRecords:
         _post(t1, "/api/front/reading/record/delete", {"record_id": rid})  # 本人可删
 
     def test_pin_foreign_bookshelf_rejected(self):
-        t1 = _front_token()
-        _ensure_shelf(t1, 3)
+        # 用注册新号持书：_ensure_shelf 会把 testuser 预置 book 3 洗成想读 0 页（种子是在读 220 页）
+        t1 = _register_user()
+        _check(_post(t1, "/api/front/bookshelf/add", {"book_id": 3}))
         t2 = _register_user()
         r = _post(t2, "/api/front/bookshelf/pin", {"book_id": 3, "pinned": 1})
         assert r.get("code") != 200, "他人置顶应被拒（user2 书架无此书）"
@@ -342,8 +343,9 @@ class TestBookshelfPinDelete:
     """S2 移出+S3 置顶"""
 
     def test_pin_toggle_and_order(self):
-        token = _front_token()
-        _ensure_shelf(token, 3)
+        # 注册新号持书：同上，避免 _ensure_shelf 洗掉 testuser 预置 book 3 在读进度
+        token = _register_user()
+        _check(_post(token, "/api/front/bookshelf/add", {"book_id": 3}))
         _check(_post(token, "/api/front/bookshelf/pin", {"book_id": 3, "pinned": 1}))
 
         lst = _get(token, "/api/front/bookshelf/list")["data"]["lists"]

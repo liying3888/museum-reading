@@ -110,7 +110,7 @@
 // 主任务：找到下一本要读的书（S1 选书死锁的解）
 // 排序=后端上架时间倒序+录入序 tie-break（06 §5 round7 口径）；chips 数据源=B1 首屏 categories 聚合键
 import { ref } from 'vue'
-import { onLoad, onReachBottom } from '@dcloudio/uni-app'
+import { onLoad, onReachBottom, onPullDownRefresh } from '@dcloudio/uni-app'
 import { bookList } from '@/api/book'
 import { navigateTo } from '@/utils/util'
 
@@ -200,6 +200,11 @@ onReachBottom(() => {
     if (firstLoading.value || loadFailed.value || finished.value) return
     pageNo.value += 1
     fetchPage()
+})
+
+// 下拉刷新：全量重拉（02 §220 手势清单：书库/书架/首页/统计四页）
+onPullDownRefresh(() => {
+    resetList().finally(() => uni.stopPullDownRefresh())
 })
 
 function goDetail(id: number) {

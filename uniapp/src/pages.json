@@ -12,7 +12,8 @@
             "path": "pages/library/index",
             "style": {
                 "navigationBarTitleText": "书库",
-                "navigationStyle": "custom"
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": true
             }
         },
         {
@@ -155,7 +156,8 @@
             "path": "pages/stats/index",
             "style": {
                 "navigationBarTitleText": "阅读统计",
-                "navigationStyle": "custom"
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": true
             },
             "auth": true
         },
